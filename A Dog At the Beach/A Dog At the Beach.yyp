@@ -63,11 +63,51 @@
             }
         },
         {
+            "Key": "174602ec-e4b6-428e-9ddb-10991a9503a9",
+            "Value": {
+                "id": "76417505-aebc-4984-b896-36633e6b1faf",
+                "resourcePath": "scripts\\refl_start\\refl_start.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1910bdab-cd8d-4078-bc55-5372a85960e3",
+            "Value": {
+                "id": "dd741804-04d4-4cb3-87c7-a412558a4b8d",
+                "resourcePath": "views\\1910bdab-cd8d-4078-bc55-5372a85960e3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1e0f5740-407b-480e-9259-9aa683a97cbd",
             "Value": {
                 "id": "0021a7b5-ae4a-4638-9ee9-54d911f63491",
                 "resourcePath": "sprites\\spr_sand\\spr_sand.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1f87c7af-e894-4d7b-8572-21c4a841750b",
+            "Value": {
+                "id": "992cc6ce-3d60-4f29-9b9d-3d6450c26546",
+                "resourcePath": "objects\\obj_waterrefl\\obj_waterrefl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "208ae31f-134e-419a-93cf-451af7a2ba6f",
+            "Value": {
+                "id": "ccf9ae41-5094-41c8-9980-e9eeba5dd511",
+                "resourcePath": "sprites\\spr_water\\spr_water.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2d10e4e1-adeb-4785-86f8-76d7f63a9d21",
+            "Value": {
+                "id": "42724f61-e0d2-4d63-a08d-8cb3328f0081",
+                "resourcePath": "scripts\\refl_water_layer\\refl_water_layer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -95,6 +135,14 @@
             }
         },
         {
+            "Key": "4d259442-60ef-49aa-ab38-c59508aad7c3",
+            "Value": {
+                "id": "d854c838-a1f8-4484-bc2e-543cd6ff4881",
+                "resourcePath": "scripts\\refl_add_object\\refl_add_object.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "542fb168-48ac-482c-95b0-a129e03d64f7",
             "Value": {
                 "id": "950956bd-21ae-4b03-be59-0b11f06d7d29",
@@ -111,11 +159,27 @@
             }
         },
         {
+            "Key": "5b437861-e41c-421f-afaf-cf91c77fb79e",
+            "Value": {
+                "id": "09b19bf5-2bcb-4dbc-ae28-ecfd520ff206",
+                "resourcePath": "scripts\\refl_water_object\\refl_water_object.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5f4e0e75-380f-4325-b340-20a6e31555c7",
             "Value": {
                 "id": "1b2ce225-8e90-488d-a9e5-8e0192e792fc",
                 "resourcePath": "views\\5f4e0e75-380f-4325-b340-20a6e31555c7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7113029b-0bf5-4dfb-8567-0f12d9dd5089",
+            "Value": {
+                "id": "57343cc8-4c86-4fad-bb10-59501a48b650",
+                "resourcePath": "objects\\obj_water\\obj_water.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -132,6 +196,22 @@
                 "id": "88662324-ef8b-4219-a7c3-ca2368e75c8f",
                 "resourcePath": "options\\html5\\options_html5.yy",
                 "resourceType": "GMHtml5Options"
+            }
+        },
+        {
+            "Key": "7a4bcf9a-1950-45f8-aaac-5f717165d64a",
+            "Value": {
+                "id": "8de559f3-00d7-4719-8398-380bc4839d9f",
+                "resourcePath": "views\\7a4bcf9a-1950-45f8-aaac-5f717165d64a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8404abb3-4163-4bbf-8b19-3cfc9816a904",
+            "Value": {
+                "id": "d89f45ee-3496-4554-ab81-0b17553700fc",
+                "resourcePath": "objects\\obj_sun\\obj_sun.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -231,10 +311,26 @@
             }
         },
         {
+            "Key": "baf29a8b-e28c-4287-a06c-49deba9a6a15",
+            "Value": {
+                "id": "e2cd7fea-5788-41bb-9426-f5d229ca18ca",
+                "resourcePath": "scripts\\Documentation_Reflection\\Documentation_Reflection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c2db3ea2-09bc-445f-94f7-84071486a844",
             "Value": {
                 "id": "c68d2dd6-9cb9-45d8-b199-002aff4c1f90",
                 "resourcePath": "views\\c2db3ea2-09bc-445f-94f7-84071486a844.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c6bf8d08-b05d-413e-97e2-f7d039e20d5b",
+            "Value": {
+                "id": "8db28125-0ea5-4d9d-b1cc-0bf7c237cc2b",
+                "resourcePath": "views\\c6bf8d08-b05d-413e-97e2-f7d039e20d5b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -268,6 +364,14 @@
                 "id": "c1e1d556-ba19-44f3-9bbe-e574a9753b55",
                 "resourcePath": "sprites\\spr_dogTail\\spr_dogTail.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d1700f22-e673-4f96-a64e-1abcb1720cba",
+            "Value": {
+                "id": "c8ffa003-11b9-4e60-8dc7-cc84effee05c",
+                "resourcePath": "shaders\\sh_land_detect\\sh_land_detect.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -325,11 +429,24 @@
                 "resourcePath": "views\\fc465ce3-315b-4a5d-80f5-f6c271a89f84.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fe6e42d9-ca2d-4bf1-9f2d-2e2d5b0d8454",
+            "Value": {
+                "id": "2e5ddae3-26b1-4fa7-9ebd-0c00d3f69e14",
+                "resourcePath": "shaders\\sh_refl\\sh_refl.yy",
+                "resourceType": "GMShader"
+            }
         }
     ],
     "script_order": [
         "11c497bb-c5a1-43dc-b847-cda5b60c4b0d",
-        "8b7b52ae-2966-47ce-93d5-25dd294d7b48"
+        "8b7b52ae-2966-47ce-93d5-25dd294d7b48",
+        "baf29a8b-e28c-4287-a06c-49deba9a6a15",
+        "174602ec-e4b6-428e-9ddb-10991a9503a9",
+        "4d259442-60ef-49aa-ab38-c59508aad7c3",
+        "5b437861-e41c-421f-afaf-cf91c77fb79e",
+        "2d10e4e1-adeb-4785-86f8-76d7f63a9d21"
     ],
     "tutorial": ""
 }
