@@ -1,0 +1,1 @@
+global.sunset = 0;

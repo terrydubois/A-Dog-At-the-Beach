@@ -1,0 +1,1 @@
+global.blendVal = 255;
