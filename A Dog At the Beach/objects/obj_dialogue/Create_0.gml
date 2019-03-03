@@ -1,8 +1,8 @@
 isTalking = false;
 
-typeStr = "";
+typeString = "";
 
-typeRate = 1;
+typeRate = 2;
 typePos = 1;
 
 typeLinePos = 0;

@@ -24,4 +24,8 @@ if(!keyboard_check(vk_left) && !keyboard_check(vk_right)) {
 gravity = 0.5;
 gravity_direction = 270;
 
+if (keyboard_check_pressed(vk_up) && !place_free(x, y + 1)) {
+	vspeed = -12;
+}
+
 //tailRot++;

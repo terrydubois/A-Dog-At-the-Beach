@@ -2,7 +2,8 @@ var currentChar = string_char_at(text[currentText], typePos);
 
 typeString += currentChar;
 
-if (currentChar = " " && typeLinePos > typeLineMaxLength) {
+
+if (currentChar == " " && typeLinePos > typeLineMaxLength) {
 	typeString += "#";
 	typeLinePos = 0;
 }
@@ -14,5 +15,3 @@ typeLinePos++;
 
 if typePos <= string_length(text[currentText])
 	alarm[0] = typeRate;
-else
-	typeLineFinished = true;

@@ -1,5 +1,6 @@
 /// @description Draw Text Box
 
+
 var rectMargin = 30;
 
 X1 = camera_get_view_x(view_camera[0]) + rectMargin;
@@ -13,5 +14,12 @@ draw_rectangle(X1, Y1, X2, Y2, false);
 	
 var strHashed = string_hash_to_newline(typeString);
 
+draw_set_font(fnt_main);
+var testChar = "A";
+typeLineMaxLength = (X2 - X1) / string_width(testChar);
+
+
+draw_set_halign(fa_left);
 draw_set_color(c_black);
-draw_text(X1 + 100, Y1 + 10, strHashed);
+draw_text(X1 + 100, Y1 + 20, strHashed);
+
