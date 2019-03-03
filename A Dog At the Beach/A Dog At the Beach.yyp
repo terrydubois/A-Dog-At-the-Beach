@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "9da9a81f-abf9-4777-aaf1-08b17a07cffa",
+            "Value": {
+                "id": "2247e67e-8776-4d23-82a1-e57a3b1ad734",
+                "resourcePath": "sprites\\spr_dogIdol\\spr_dogIdol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "dd288c96-9063-4602-a618-e9dac7443160",
@@ -204,6 +212,14 @@
                 "id": "aab5e6b7-a9bb-4e69-ab12-8ed57019d9c7",
                 "resourcePath": "views\\cc9ea195-440f-4ab6-bb44-51e262704490.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d15d9109-b50c-4935-8157-5ae9803141ab",
+            "Value": {
+                "id": "c1e1d556-ba19-44f3-9bbe-e574a9753b55",
+                "resourcePath": "sprites\\spr_dogTail\\spr_dogTail.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

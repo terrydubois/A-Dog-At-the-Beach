@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-var inputSpeed = 0;
+tailRot = 0;
 
-deacc = 0.1;
+facing = 1;
