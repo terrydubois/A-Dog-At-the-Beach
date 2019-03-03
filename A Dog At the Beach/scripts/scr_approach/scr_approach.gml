@@ -9,4 +9,8 @@ else if (val > valDest) {
 	val -= approachRate;
 }
 
+if (abs(val - valDest) < 0.1) {
+	val = valDest;
+}
+
 return val;
