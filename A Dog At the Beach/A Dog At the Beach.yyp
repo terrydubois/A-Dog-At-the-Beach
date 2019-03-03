@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "8b7b52ae-2966-47ce-93d5-25dd294d7b48",
+            "Value": {
+                "id": "8eded877-a51d-4633-b878-28253199017c",
+                "resourcePath": "scripts\\scr_fadeToBlack\\scr_fadeToBlack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "96dfa9e1-ab32-47ff-87cb-0c7ee0d32fc2",
             "Value": {
                 "id": "b7897e46-0429-419e-8ced-fd402e78d46f",
@@ -320,7 +328,8 @@
         }
     ],
     "script_order": [
-        "11c497bb-c5a1-43dc-b847-cda5b60c4b0d"
+        "11c497bb-c5a1-43dc-b847-cda5b60c4b0d",
+        "8b7b52ae-2966-47ce-93d5-25dd294d7b48"
     ],
     "tutorial": ""
 }

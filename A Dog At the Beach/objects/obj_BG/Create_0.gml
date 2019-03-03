@@ -8,3 +8,5 @@ colorMid[0] = make_color_hsv(118, 253, 217);
 colorMid[1] = make_color_hsv(215, 150, 217);
 
 mergeAmount = 0;
+
+global.blendVal = 255;

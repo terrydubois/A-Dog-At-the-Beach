@@ -1,0 +1,1 @@
+image_blend = make_color_rgb(global.blendVal, global.blendVal, global.blendVal);

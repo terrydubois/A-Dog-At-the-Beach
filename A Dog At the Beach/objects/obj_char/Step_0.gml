@@ -1,3 +1,4 @@
+scr_fadeToBlack();
 
 if (keyboard_check(vk_left)) {
 	hspeed = -4;
