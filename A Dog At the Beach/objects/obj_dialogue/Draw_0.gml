@@ -22,4 +22,3 @@ typeLineMaxLength = (X2 - X1) / string_width(testChar);
 draw_set_halign(fa_left);
 draw_set_color(c_black);
 draw_text(X1 + 100, Y1 + 20, strHashed);
-
