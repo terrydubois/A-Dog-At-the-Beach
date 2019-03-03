@@ -47,6 +47,22 @@
             }
         },
         {
+            "Key": "11c497bb-c5a1-43dc-b847-cda5b60c4b0d",
+            "Value": {
+                "id": "01d5a511-2e82-46c9-bd3d-4daa80e3041c",
+                "resourcePath": "scripts\\scr_approach\\scr_approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "31f4297f-ae16-4bba-a74d-384cf55adecb",
+            "Value": {
+                "id": "53a95b69-e966-4574-a789-5ec5b802c97e",
+                "resourcePath": "objects\\obj_NPC\\obj_NPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3258a2fd-aec5-4133-b354-694439ff09fd",
             "Value": {
                 "id": "795c90f1-1151-4709-aecd-d2ed64330fe1",
@@ -232,7 +248,7 @@
         }
     ],
     "script_order": [
-        
+        "11c497bb-c5a1-43dc-b847-cda5b60c4b0d"
     ],
     "tutorial": ""
 }
