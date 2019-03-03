@@ -7,4 +7,4 @@ draw_set_alpha(1);
 draw_sprite_ext(spr_dogTail, 0, x - (25 * facing), y - 32, facing, 1, tailRot, c_white, 1);
 
 // draw self
-draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, tailRot, c_white, 1);
+draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, 1);
