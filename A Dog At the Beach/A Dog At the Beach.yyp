@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "aab25381-637d-4afe-886d-a3c2953ab2e0",
+            "Value": {
+                "id": "74b7b1c7-41db-43a6-96d2-ddbf2c576dd1",
+                "resourcePath": "sprites\\spr_dogWalk\\spr_dogWalk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2db3ea2-09bc-445f-94f7-84071486a844",
             "Value": {
                 "id": "c68d2dd6-9cb9-45d8-b199-002aff4c1f90",
