@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "e53176c0-438f-4be5-81e1-895544af38c4",
+            "Value": {
+                "id": "026029d0-0e8d-4ba2-a6a8-ef9d4c6c5ff8",
+                "resourcePath": "sprites\\spr_dogIdeal\\spr_dogIdeal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f180afcd-cf06-42d3-921a-3916647bd73e",
             "Value": {
                 "id": "990a0145-5aec-42d7-b08a-43f06b1d5b71",
