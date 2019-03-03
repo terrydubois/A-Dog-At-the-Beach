@@ -1,7 +1,5 @@
 scr_fadeToBlack();
 
-
-
 if (!instance_exists(obj_dialogue)) {
 	if (keyboard_check(vk_left)) {
 		hspeed = -4;
@@ -18,10 +16,12 @@ else {
 	hspeed = 0;
 }
 
-
 if(!keyboard_check(vk_left) && !keyboard_check(vk_right)) {
 	hspeed = scr_approach(hspeed, 0, deAcc);	
 	sprite_index = spr_dogIdol;
 }
+
+gravity = 0.5;
+gravity_direction = 270;
 
 //tailRot++;

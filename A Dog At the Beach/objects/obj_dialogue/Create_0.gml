@@ -1,4 +1,3 @@
-
 isTalking = false;
 
 typeStr = "";

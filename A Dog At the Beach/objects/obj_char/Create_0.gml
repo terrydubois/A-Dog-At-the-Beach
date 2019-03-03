@@ -1,5 +1,3 @@
-y = obj_sand.y;
-
 tailRot = 0;
 
 facing = 1;
