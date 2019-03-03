@@ -1,6 +1,15 @@
-X1 = x;
-X2 = x + 500;
-Y1 = y;
-Y2 = y + 100;
 
 isTalking = false;
+
+typeStr = "";
+
+typeRate = 1;
+typePos = 1;
+
+typeLinePos = 0;
+typeLineMaxLength = 65;
+typeLineFinished = false;
+
+alarm[0] = typeRate;
+
+currentText = 0;

@@ -1,14 +1,21 @@
 scr_fadeToBlack();
 
-if (keyboard_check(vk_left)) {
-	hspeed = -4;
-	facing = -1;
-	sprite_index = spr_dogWalk;
+
+
+if (!instance_exists(obj_dialogue)) {
+	if (keyboard_check(vk_left)) {
+		hspeed = -4;
+		facing = -1;
+		sprite_index = spr_dogWalk;
+	}
+	if (keyboard_check(vk_right)) {
+		hspeed = 4;
+		facing = 1;
+		sprite_index = spr_dogWalk;
+	}
 }
-if (keyboard_check(vk_right)) {
-	hspeed = 4;
-	facing = 1;
-	sprite_index = spr_dogWalk;
+else {
+	hspeed = 0;
 }
 
 
