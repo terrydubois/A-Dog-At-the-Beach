@@ -1,4 +1,4 @@
-scr_fadeToBlack();
+scr_fadeToBlack(0);
 
 if (distance_to_object(obj_char) < 50) {
 	if (state == stateNormal) {

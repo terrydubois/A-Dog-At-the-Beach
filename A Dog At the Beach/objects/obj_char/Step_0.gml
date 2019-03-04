@@ -1,15 +1,29 @@
-scr_fadeToBlack();
+scr_fadeToBlack(0);
 
 if (!instance_exists(obj_dialogue)) {
 	if (keyboard_check(vk_left)) {
-		hspeed = -4;
-		facing = -1;
-		sprite_index = spr_dogWalk;
+		if (x > sprite_width / 2) {
+			hspeed = -4;
+			facing = -1;
+			sprite_index = spr_dogWalk;
+		}
+		else {
+			hspeed = 0;
+			facing = -1;
+			sprite_index = spr_dogIdol;
+		}
 	}
 	if (keyboard_check(vk_right)) {
-		hspeed = 4;
-		facing = 1;
-		sprite_index = spr_dogWalk;
+		if (x < room_width - (sprite_width / 2)) {
+			hspeed = 4;
+			facing = 1;
+			sprite_index = spr_dogWalk;
+		}
+		else {
+			hspeed = 0;
+			facing = 1;
+			sprite_index = spr_dogIdol;
+		}
 	}
 	
 	if (keyboard_check_pressed(vk_up) && !place_free(x, y + 1)) {
@@ -27,7 +41,5 @@ if(!keyboard_check(vk_left) && !keyboard_check(vk_right)) {
 
 gravity = 0.5;
 gravity_direction = 270;
-
-
 
 //tailRot++;

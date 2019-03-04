@@ -1,1 +1,1 @@
-scr_fadeToBlack();
+scr_fadeToBlack(0);

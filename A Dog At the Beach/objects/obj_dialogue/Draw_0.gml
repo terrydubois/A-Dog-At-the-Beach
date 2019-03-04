@@ -8,7 +8,7 @@ X2 = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) -
 Y1 = camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) * 0.75);
 Y2 = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - rectMargin;
 
-draw_set_alpha(1);
+draw_set_alpha(0.75);
 draw_set_color(c_white);
 draw_rectangle(X1, Y1, X2, Y2, false);
 	
@@ -21,4 +21,5 @@ typeLineMaxLength = (X2 - X1) / string_width(testChar);
 
 draw_set_halign(fa_left);
 draw_set_color(c_black);
+draw_set_alpha(1);
 draw_text(X1 + 100, Y1 + 20, strHashed);
