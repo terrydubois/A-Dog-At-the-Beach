@@ -4,4 +4,4 @@ if (global.sunset < 0.13) {
 }
 
 image_alpha = global.sunset + plusAlpha;
-image_alpha = clamp(image_alpha, 0, 1);
+image_alpha = clamp(image_alpha, 0, 0.75);

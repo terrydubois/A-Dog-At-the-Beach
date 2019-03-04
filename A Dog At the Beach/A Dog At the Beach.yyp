@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "928eea8e-db35-4cd0-84fc-a68648e6cdf6",
+            "Value": {
+                "id": "949caa92-a6b1-4d09-b0d0-14affe977d27",
+                "resourcePath": "sprites\\spr_sky\\spr_sky.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96dfa9e1-ab32-47ff-87cb-0c7ee0d32fc2",
             "Value": {
                 "id": "b7897e46-0429-419e-8ced-fd402e78d46f",

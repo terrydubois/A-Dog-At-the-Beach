@@ -1,10 +1,10 @@
 x = room_width / 2;
 
-if (keyboard_check(ord("W"))) {
+if (keyboard_check(ord("W")) and y > -sprite_height / 2) {
 	y -= 4;
 }
-if (keyboard_check(ord("S"))) {
-	y += 4;
+if (keyboard_check(ord("S")) and y < obj_water.y + sprite_height) {
+	y += 4; 
 }
 
 global.sunset = y / (obj_water.y + 50);
