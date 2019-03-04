@@ -1,28 +1,18 @@
 {
-    "id": "7113029b-0bf5-4dfb-8567-0f12d9dd5089",
+    "id": "911fc1ae-07da-409d-b45f-bf640f5ee432",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_water",
+    "name": "obj_waterCrest",
     "eventList": [
         {
-            "id": "9f694def-c817-4560-b12a-5513fa55e7a3",
+            "id": "b022984f-ffa5-4276-bdb5-1881e47e9942",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "7113029b-0bf5-4dfb-8567-0f12d9dd5089"
-        },
-        {
-            "id": "3ea40b59-c994-43b0-8a86-77385527dd14",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "7113029b-0bf5-4dfb-8567-0f12d9dd5089"
+            "m_owner": "911fc1ae-07da-409d-b45f-bf640f5ee432"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "208ae31f-134e-419a-93cf-451af7a2ba6f",
+    "spriteId": "64f3df2b-5f72-4277-ac9e-36e369daabae",
     "visible": true
 }

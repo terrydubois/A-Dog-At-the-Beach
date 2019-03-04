@@ -1,28 +1,18 @@
 {
-    "id": "7113029b-0bf5-4dfb-8567-0f12d9dd5089",
+    "id": "2c311bed-5cd5-4a33-806a-6a1dd90f5e01",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_water",
+    "name": "obj_palm4",
     "eventList": [
         {
-            "id": "9f694def-c817-4560-b12a-5513fa55e7a3",
+            "id": "a6b1cb95-242f-4aca-9cb9-0458e4ff8626",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "7113029b-0bf5-4dfb-8567-0f12d9dd5089"
-        },
-        {
-            "id": "3ea40b59-c994-43b0-8a86-77385527dd14",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "7113029b-0bf5-4dfb-8567-0f12d9dd5089"
+            "m_owner": "2c311bed-5cd5-4a33-806a-6a1dd90f5e01"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "208ae31f-134e-419a-93cf-451af7a2ba6f",
+    "spriteId": "26bc5528-5669-4bbb-8371-1b01bb9bda51",
     "visible": true
 }
