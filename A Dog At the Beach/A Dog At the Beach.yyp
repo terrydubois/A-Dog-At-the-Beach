@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "d0c060cd-97cd-40ec-b86e-8013d4c6a93d",
+            "Value": {
+                "id": "b73211cc-d58f-4097-a5f9-fac0c045e5ba",
+                "resourcePath": "sounds\\snd_waves\\snd_waves.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d0efce1b-fe19-44f3-bde4-e8c182354d87",
             "Value": {
                 "id": "9a8e20bb-5a16-451c-bec0-6d768b64188e",

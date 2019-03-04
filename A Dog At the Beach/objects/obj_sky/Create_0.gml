@@ -7,3 +7,5 @@ colorMid[1] = make_color_hsv(215, 150, 217);
 mergeAmount = 0;
 
 global.blendVal = 255;
+
+audio_play_sound(snd_waves, 10, true);

@@ -12,3 +12,5 @@ typeLineFinished = false;
 alarm[0] = typeRate;
 
 currentText = 0;
+
+canSpace = false;

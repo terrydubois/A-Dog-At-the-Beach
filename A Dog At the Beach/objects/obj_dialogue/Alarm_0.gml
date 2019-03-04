@@ -1,3 +1,7 @@
+if (typeString == text[currentText]) {
+	exit;
+}
+
 var currentChar = string_char_at(text[currentText], typePos);
 
 typeString += currentChar;
