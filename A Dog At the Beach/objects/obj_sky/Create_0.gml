@@ -11,3 +11,5 @@ global.blendVal = 255;
 audio_play_sound(snd_waves, 10, true);
 
 y = obj_water.y;
+
+stars = false;

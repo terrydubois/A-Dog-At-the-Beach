@@ -15,6 +15,7 @@ if (typePos >= string_length(text[currentText])) {
 	}
 	
 	typeRate = 2;
+	pressSpaceText = "Press SPACE";
 }
 else {
 	if (keyboard_check(vk_space)) {
@@ -24,6 +25,7 @@ else {
 	else {
 		typeRate = 2;
 	}
+	pressSpaceText = "";
 }
 
 if (keyboard_check_released(vk_space) and !canSpace) {

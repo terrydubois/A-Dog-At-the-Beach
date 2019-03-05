@@ -6,3 +6,5 @@ stateNormal = 0;
 statePlayerNear = 1;
 stateTalking = 2;
 stateInteracting = 3;
+
+canSpace = true;

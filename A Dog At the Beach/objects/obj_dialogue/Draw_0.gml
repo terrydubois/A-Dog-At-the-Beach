@@ -23,3 +23,6 @@ draw_set_halign(fa_left);
 draw_set_color(c_black);
 draw_set_alpha(1);
 draw_text(X1 + 100, Y1 + 20, strHashed);
+
+draw_set_halign(fa_right);
+draw_text(X2 - 32, Y2 - 32, pressSpaceText);
