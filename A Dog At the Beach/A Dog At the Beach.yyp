@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "069a0f69-308b-41c8-b73d-3ce52c514f42",
+            "Value": {
+                "id": "41102503-4b4a-425d-ac1c-b5cb0f554b1e",
+                "resourcePath": "objects\\obj_NPC_searcher\\obj_NPC_searcher.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "09a9d837-d858-4c4d-9d8d-88da15fdd925",
             "Value": {
                 "id": "977c5493-673e-4b87-9563-2d8bab1691ca",
@@ -119,6 +127,14 @@
             }
         },
         {
+            "Key": "2530a872-ea88-4360-9c8a-44d840f82f92",
+            "Value": {
+                "id": "5d2663ac-186d-415f-b1df-f2565048c4c2",
+                "resourcePath": "sprites\\spr_clouds\\spr_clouds.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26240efd-0b93-43cd-82eb-21956ed1a40d",
             "Value": {
                 "id": "aab6573a-2c53-4a59-96c0-cd907e3ec009",
@@ -188,6 +204,14 @@
                 "id": "827087a4-ef27-4284-9757-7905685e6ff9",
                 "resourcePath": "views\\351efe6d-96c8-44dd-b7b4-956b2f26d66e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "40504e45-132f-4a0f-a245-7c435bf78c20",
+            "Value": {
+                "id": "f42ebd8d-d46e-4c54-83f0-acbadda77c80",
+                "resourcePath": "objects\\obj_cloud\\obj_cloud.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -439,10 +463,26 @@
             }
         },
         {
+            "Key": "af0bfe4b-077c-4541-b47a-4238f657e2d8",
+            "Value": {
+                "id": "c7d4939a-3af6-4223-acef-d9cd55346e82",
+                "resourcePath": "sounds\\snd_music\\snd_music.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "baf29a8b-e28c-4287-a06c-49deba9a6a15",
             "Value": {
                 "id": "e2cd7fea-5788-41bb-9426-f5d229ca18ca",
                 "resourcePath": "scripts\\Documentation_Reflection\\Documentation_Reflection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bdbf69f0-c672-4563-9ccb-ebb12049c71d",
+            "Value": {
+                "id": "df18b6c8-13a0-438f-8bb6-c3832bc5f63b",
+                "resourcePath": "scripts\\scr_spawnCloud\\scr_spawnCloud.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -599,7 +639,8 @@
         "4d259442-60ef-49aa-ab38-c59508aad7c3",
         "5b437861-e41c-421f-afaf-cf91c77fb79e",
         "2d10e4e1-adeb-4785-86f8-76d7f63a9d21",
-        "26240efd-0b93-43cd-82eb-21956ed1a40d"
+        "26240efd-0b93-43cd-82eb-21956ed1a40d",
+        "bdbf69f0-c672-4563-9ccb-ebb12049c71d"
     ],
     "tutorial": ""
 }

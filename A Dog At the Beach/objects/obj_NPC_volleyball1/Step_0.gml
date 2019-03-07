@@ -20,7 +20,6 @@ if (obj_NPC_volleyball2.state == obj_NPC_volleyball2.stateWalkAway
 	
 	var nearestBall = instance_nearest(x, y, obj_ball);
 	if (nearestBall.hspeed < 0) {
-		show_debug_message("in here");
 		if (nearestBall.x < x) {
 			hspeed = -4;
 		}

@@ -37,6 +37,8 @@ if (state == statePlayerNear) {
 					instDialogue.text[1] = "I'm a local, myself. These parts bring folks from all over. You hear a lot of stories.";
 					textCycle = 0;
 					break;
+				default:
+					break;
 			}
 			
 			textCycleDelay = room_speed * 30;

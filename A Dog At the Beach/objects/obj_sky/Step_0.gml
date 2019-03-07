@@ -14,3 +14,8 @@ if (stars and instance_number(obj_star) < 1) {
 	scr_spawnStar();
 	alarm[0] = 60;
 }
+
+if (instance_number(obj_dialogue) > 1) {
+	var inst = instance_find(obj_dialogue, 0);
+	instance_destroy(inst);
+}
