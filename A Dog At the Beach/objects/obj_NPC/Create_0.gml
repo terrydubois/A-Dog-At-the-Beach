@@ -1,5 +1,3 @@
-y = obj_sand.y;
-
 interactTextPlusY = 0;
 
 stateNormal = 0;
