@@ -1,4 +1,4 @@
-x = room_width / 2;
+x = (room_width / 2) - (((room_width / 2) - camera_get_view_x(view_camera[0])) / 4);
 
 if (keyboard_check(ord("W")) and y > -sprite_height / 2) {
 	y -= 2;

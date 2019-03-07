@@ -2,6 +2,7 @@ if (keyboard_check_pressed(vk_shift)) {
 	showDevVars = !showDevVars;
 }
 
+
 if (audio_system_is_available()) {
     if (audio_is_paused(global.soundWaves)) {
 		audio_resume_sound(global.soundWaves)

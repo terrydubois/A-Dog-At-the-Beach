@@ -55,6 +55,7 @@ if (state == stateWalkAway) {
 		sprite_index = spr_dogIdol;
 		image_xscale = -1;
 		hspeed = 0;
+		instVolleyballBall.interactable = true;
 	}
 }
 

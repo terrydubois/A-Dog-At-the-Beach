@@ -24,7 +24,7 @@ if (state == statePlayerNear) {
 					break;
 				case 1:
 					instDialogue.text[0] = "The tide's been bringin' in some beautiful shells lately. I don't know where they are though... Try digging by pressing Z.";
-					instDialogue.text[1] = "Those shells ain't for keepin' though! More of a catch-and-release.";
+					instDialogue.text[1] = "Developer's note: digging has not been implemented yet!";
 					textCycle++;
 					break;
 				case 2:

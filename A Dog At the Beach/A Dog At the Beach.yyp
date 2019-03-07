@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "b730655e-f428-4c98-b3ab-d2c31aa22dc1",
+            "Value": {
+                "id": "4c12f985-e106-4f90-8474-4cf74ccdd7c1",
+                "resourcePath": "scripts\\scr_drawTextShadow\\scr_drawTextShadow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "baf29a8b-e28c-4287-a06c-49deba9a6a15",
             "Value": {
                 "id": "e2cd7fea-5788-41bb-9426-f5d229ca18ca",
@@ -607,6 +615,14 @@
             }
         },
         {
+            "Key": "f18db016-f8af-4288-a28a-d668a980713a",
+            "Value": {
+                "id": "845f2681-a131-4209-93fa-66b14cdfed16",
+                "resourcePath": "objects\\obj_controls\\obj_controls.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "879e6c8e-9baf-448b-a168-c19ee2ba4d0e",
@@ -640,7 +656,8 @@
         "5b437861-e41c-421f-afaf-cf91c77fb79e",
         "2d10e4e1-adeb-4785-86f8-76d7f63a9d21",
         "26240efd-0b93-43cd-82eb-21956ed1a40d",
-        "bdbf69f0-c672-4563-9ccb-ebb12049c71d"
+        "bdbf69f0-c672-4563-9ccb-ebb12049c71d",
+        "b730655e-f428-4c98-b3ab-d2c31aa22dc1"
     ],
     "tutorial": ""
 }

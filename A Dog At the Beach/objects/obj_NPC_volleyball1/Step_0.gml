@@ -15,19 +15,33 @@ if (distance_to_object(obj_ball) < 15 && !place_free(x, y + 1)) {
 }
 
 
+
 if (obj_NPC_volleyball2.state == obj_NPC_volleyball2.stateWalkAway
 && obj_NPC_volleyball2.x >= obj_NPC_volleyball2.walkAwayXPos) {
 	
 	var nearestBall = instance_nearest(x, y, obj_ball);
+	/*
+	if (nearestBall.x < xOriginal) {
+		x = nearestBall.x;
+	}
+	*/
+	
 	if (nearestBall.hspeed < 0) {
-		if (nearestBall.x < x) {
+		if (nearestBall.x < x - 4) {
 			hspeed = -4;
 		}
-		else if (nearestBall.x > x) {
+		else if (nearestBall.x > x + 4) {
 			hspeed = 4;
 		}
 	}
+	
 }
+/*
+var nearestBall = instance_nearest(x, y, obj_ball);
+if (nearestBall.x < xOriginal) {
+	x = nearestBall.x;
+}
+*/
 
 if (x > xOriginal + 50) {
 	x = xOriginal + 50;
@@ -36,4 +50,11 @@ if (x > xOriginal + 50) {
 if (x < xOriginal - 100) {
 	x = xOriginal - 100;
 	hspeed = 0;
+}
+
+if (hspeed = 0) {
+	sprite_index = spr_dogIdol;
+}
+else {
+	sprite_index = spr_dogWalk;
 }

@@ -6,13 +6,15 @@ scr_fadeToBlack(0);
 gravity = 0.25;
 gravity_direction = 270;
 
-if (place_meeting(x + 3, y, obj_char) and obj_char.facing == -1) {
-	hspeed = -2;
-	vspeed = -obj_char.jumpSpeed;
-}
-else if (place_meeting(x - 3, y, obj_char) and obj_char.facing == 1) {
-	hspeed = 2;
-	vspeed = -obj_char.jumpSpeed;
+if (interactable) {
+	if (place_meeting(x + 3, y, obj_char) and obj_char.facing == -1) {
+		hspeed = -2;
+		vspeed = -obj_char.jumpSpeed;
+	}
+	else if (place_meeting(x - 3, y, obj_char) and obj_char.facing == 1) {
+		hspeed = 2;
+		vspeed = -obj_char.jumpSpeed;
+	}
 }
 
 if (!place_free(x, y + 1)) {
