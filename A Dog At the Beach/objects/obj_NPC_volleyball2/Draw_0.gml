@@ -12,5 +12,4 @@ if (state == statePlayerNear) {
 if (obj_hud.showDevVars) {
 	draw_set_font(fnt_debug);
 	draw_text(x - 20, y - 20, "state: " + string(state));
-	draw_text(x - 20, y, "textCycleDelay: " + string(textCycleDelay));
 }

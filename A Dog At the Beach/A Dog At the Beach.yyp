@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "2455505e-4ebc-499b-9e4d-80ff78f1efc2",
+            "Value": {
+                "id": "5dc3e1dd-52d0-42f6-8fc4-c9ca9d0f0dda",
+                "resourcePath": "objects\\obj_NPC_volleyball2\\obj_NPC_volleyball2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24e660e0-a9b3-4352-b77a-e4c1157c316a",
             "Value": {
                 "id": "54caf440-09b7-4db6-a75b-b6de3dd7366e",
@@ -179,6 +187,14 @@
             "Value": {
                 "id": "827087a4-ef27-4284-9757-7905685e6ff9",
                 "resourcePath": "views\\351efe6d-96c8-44dd-b7b4-956b2f26d66e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4c90490a-dcdb-4ab6-a256-55540ad05db4",
+            "Value": {
+                "id": "7c8b5782-f33c-4df3-8752-eb508af03322",
+                "resourcePath": "views\\4c90490a-dcdb-4ab6-a256-55540ad05db4.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -556,6 +572,14 @@
                 "id": "879e6c8e-9baf-448b-a168-c19ee2ba4d0e",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f6da7b9b-d815-45b6-a3cf-5e8298afab2d",
+            "Value": {
+                "id": "62817b88-0a8f-4649-a2fe-bb528491de00",
+                "resourcePath": "objects\\obj_NPC_volleyball1\\obj_NPC_volleyball1.yy",
+                "resourceType": "GMObject"
             }
         },
         {

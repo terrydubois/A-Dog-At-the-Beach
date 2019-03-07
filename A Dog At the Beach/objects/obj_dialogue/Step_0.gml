@@ -6,6 +6,7 @@ if (typePos >= string_length(text[currentText])) {
 			currentText++;
 			typeString = "";
 			typePos = 1;
+			typeLinePos = 0;
 			alarm[0] = typeRate;
 		}
 		else {

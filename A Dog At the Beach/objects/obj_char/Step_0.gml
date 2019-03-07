@@ -27,7 +27,7 @@ if (!instance_exists(obj_dialogue)) {
 	}
 	
 	if (keyboard_check_pressed(vk_up) && !place_free(x, y + 1)) {
-		vspeed = -8;
+		vspeed = -jumpSpeed;
 	}
 }
 else {
