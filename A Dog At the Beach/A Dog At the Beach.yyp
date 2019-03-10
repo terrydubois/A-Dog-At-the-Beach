@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "ad888422-81c9-475f-8f5d-1136f7d0edc6",
+            "Value": {
+                "id": "7d630167-053a-4101-8ec0-1717c0780edd",
+                "resourcePath": "objects\\obj_sandParticle\\obj_sandParticle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "af0bfe4b-077c-4541-b47a-4238f657e2d8",
             "Value": {
                 "id": "c7d4939a-3af6-4223-acef-d9cd55346e82",
@@ -623,6 +631,14 @@
             }
         },
         {
+            "Key": "e6930e0b-fb9b-40c6-b8fc-2c172992d1e8",
+            "Value": {
+                "id": "d97e0398-1308-47ac-9220-5e5a6930506b",
+                "resourcePath": "sprites\\spr_dogDig\\spr_dogDig.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f180afcd-cf06-42d3-921a-3916647bd73e",
             "Value": {
                 "id": "990a0145-5aec-42d7-b08a-43f06b1d5b71",
@@ -639,11 +655,27 @@
             }
         },
         {
+            "Key": "f2e07aea-cb7a-48a9-a703-4e1d15d69813",
+            "Value": {
+                "id": "ddb2acbb-eefd-48cc-9be5-8d2c27a2062c",
+                "resourcePath": "sprites\\spr_sandParticle\\spr_sandParticle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "879e6c8e-9baf-448b-a168-c19ee2ba4d0e",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f5feb665-273c-40df-92b7-552b0a3cdaaa",
+            "Value": {
+                "id": "5e2eb5d4-2a8c-4a46-8352-3d62c47e3372",
+                "resourcePath": "sprites\\spr_dogJump\\spr_dogJump.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
