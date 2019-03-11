@@ -27,7 +27,12 @@
         "bcd19171-d59a-46cf-ae0b-54ccd7be2a46",
         "bd08f24f-79c9-403b-aaba-9b49b485d549",
         "0fc420d8-2e20-4a39-87e6-70462e4b08b7",
-        "09af4708-052a-4509-b4c3-7a846e48d555"
+        "09af4708-052a-4509-b4c3-7a846e48d555",
+        "b40daecb-db10-4bc0-b6eb-7d9e0c711166",
+        "d6d5e27d-8df6-424c-b714-51813d92e818",
+        "9a0e4118-d2b9-4939-bc74-56ae22c5ec75",
+        "ce145a11-b5e4-4998-8f6b-795aca18efea",
+        "2fff4c9e-9d0c-4f97-a433-dbb78db9134c"
     ],
     "IsDnD": false,
     "layers": [
