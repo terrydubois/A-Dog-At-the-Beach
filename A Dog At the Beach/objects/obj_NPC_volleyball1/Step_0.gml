@@ -52,9 +52,23 @@ if (x < xOriginal - 100) {
 	hspeed = 0;
 }
 
-if (hspeed = 0) {
+if (abs(hspeed) < 0.1) {
 	sprite_index = spr_dogIdol;
 }
 else {
 	sprite_index = spr_dogWalk;
+}
+
+if (place_free(x, y + 1)) {
+	image_speed = 0;
+	sprite_index = spr_dogJump;
+	if (vspeed < 0) {
+		image_index = 0;
+	}
+	else {
+		image_index = 1;
+	}
+}
+else {
+	image_speed = 1;
 }

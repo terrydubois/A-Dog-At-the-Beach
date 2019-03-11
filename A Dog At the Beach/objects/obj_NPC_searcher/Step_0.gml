@@ -18,20 +18,28 @@ if (state == stateInteracting) {
 if (state == statePlayerNear) {
 	if (keyboard_check_released(vk_space) and canSpace) {
 		state = stateInteracting;
-		if (!instance_exists(obj_dialogue) && !obj_char.carrying) {
+		if (!instance_exists(obj_dialogue) && !obj_char.carrying && !endTextCycle) {
 			var instDialogue = instance_create_layer(x, y, "InstancesDialogue", obj_dialogue);
 			
-			switch (textCycle) {
-				case 0:
-					instDialogue.text[0] = "Oh hey... I'm Sara. I'm searching for a special locket... I lost it in the sand!";
-					instDialogue.text[1] = "I know it's here somewhere... let me know if you see anything!";
-					textCycle++;
-					break;
-				case 1:
-					instDialogue.text[0] = "I still haven't found my locket! Please let me know if it turns up.";
-					break;
-				default:
-					break;
+			if (obj_locket.carriedSara) {
+				if (!endTextCycle) {
+					instDialogue.text[0] = "Thank you so much for finding my locket! It really means a lot to me.";
+					endTextCycle = true;
+				}
+			}
+			else {
+				switch (textCycle) {
+					case 0:
+						instDialogue.text[0] = "Oh hey... I'm Sara. I'm searching for a special locket... I lost it in the sand!";
+						instDialogue.text[1] = "I know it's here somewhere... let me know if you see anything!";
+						textCycle++;
+						break;
+					case 1:
+						instDialogue.text[0] = "I still haven't found my locket! Please let me know if it turns up.";
+						break;
+					default:
+						break;
+				}
 			}
 			
 		}

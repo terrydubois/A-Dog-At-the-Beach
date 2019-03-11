@@ -1,6 +1,7 @@
 dugUpAmount = 60;
 dugUp = false;
 carried = false;
+carriedSara = false;
 
 playerDigDist = 7;
 

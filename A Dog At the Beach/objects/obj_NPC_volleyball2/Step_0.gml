@@ -59,6 +59,26 @@ if (state == stateWalkAway) {
 	}
 }
 
+if (place_free(x, y + 1)) {
+	image_speed = 0;
+	sprite_index = spr_dogJump;
+	if (vspeed < 0) {
+		image_index = 0;
+	}
+	else {
+		image_index = 1;
+	}
+}
+else {
+	if (abs(hspeed) < 1) {
+		sprite_index = spr_dogIdol;
+	}
+	else {
+		sprite_index = spr_dogWalk;
+	}
+	image_speed = 1;
+}
+
 
 
 var textPlusYMax = 20;

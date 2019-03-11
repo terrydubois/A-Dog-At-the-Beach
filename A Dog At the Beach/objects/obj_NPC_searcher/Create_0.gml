@@ -7,6 +7,8 @@ statePlayerNear = 1;
 stateTalking = 2;
 stateInteracting = 3;
 
+endTextCycle = false;
+
 canSpace = true;
 
 textCycle = 0;

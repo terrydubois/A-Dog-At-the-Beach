@@ -28,9 +28,22 @@ if (!dugUp && dugUpAmount <= 0) {
 	yOffset = 32;
 }
 
-if (carried) {
-	var xDest = obj_char.x + (obj_char.facing * 27);
-	var yDest = obj_char.y - 30;
+if (carried || carriedSara) {
+	var xDest;
+	var yDest;
+	
+	if (carriedSara) {
+		var facing = 1;
+		if (obj_NPC_searcher.image_xscale < 0) {
+			facing = -1;
+		}
+		xDest = obj_NPC_searcher.x + (facing * 27);
+		yDest = obj_NPC_searcher.y - 30;
+	}
+	else {
+		xDest = obj_char.x + (obj_char.facing * 27);
+		yDest = obj_char.y - 30;
+	}
 	x = xDest;
 	y = yDest;
 	gravity = 0;
@@ -44,4 +57,8 @@ if (carried) {
 }
 else {
 	image_angle = 90;
+	
+	if (dugUp && distance_to_object(obj_NPC_searcher) < 16) {
+		carriedSara = true;
+	}
 }
