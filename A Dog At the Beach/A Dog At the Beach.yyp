@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "3b4efddb-ce1e-4ad9-8c6c-b1e48b6ed2cd",
+            "Value": {
+                "id": "9be434f9-e265-42ec-b10a-eb5c864b0243",
+                "resourcePath": "objects\\obj_firelight\\obj_firelight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "40504e45-132f-4a0f-a245-7c435bf78c20",
             "Value": {
                 "id": "f42ebd8d-d46e-4c54-83f0-acbadda77c80",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "ae0a5a02-356b-40d0-81be-ba10d96516c0",
+            "Value": {
+                "id": "dd80bfb3-6b59-4c5a-bd1a-e2567810ceaf",
+                "resourcePath": "sprites\\spr_firelight\\spr_firelight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "af0bfe4b-077c-4541-b47a-4238f657e2d8",
             "Value": {
                 "id": "c7d4939a-3af6-4223-acef-d9cd55346e82",
@@ -644,6 +660,14 @@
                 "id": "c68d2dd6-9cb9-45d8-b199-002aff4c1f90",
                 "resourcePath": "views\\c2db3ea2-09bc-445f-94f7-84071486a844.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c3bd4e91-a7fa-418c-8ff7-caf138c0d11d",
+            "Value": {
+                "id": "4b471dee-5b93-4565-a973-fc07f5d81c13",
+                "resourcePath": "objects\\obj_firepit\\obj_firepit.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,3 +1,5 @@
+scr_fadeToBlack(60);
+
 gravity = 0.5;
 gravity_direction = 270;
 
