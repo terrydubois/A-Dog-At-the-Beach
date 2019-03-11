@@ -1,0 +1,48 @@
+Converting GML script: ${project_dir}\scripts\trackdog_add_track\trackdog_add_track.gml
+Converted description /// @description trackdog_add_track(sound_index)/// @param sound_index
+
+Converting GML script: ${project_dir}\scripts\trackdog_any_track_is_soloed\trackdog_any_track_is_soloed.gml
+Converted description /// @description trackdog_any_track_is_soloed()
+
+Converting GML script: ${project_dir}\scripts\trackdog_get_track_volume\trackdog_get_track_volume.gml
+Converted description /// @description trackdog_get_track_volume(sound_index)/// @param sound_index
+
+Converting GML script: ${project_dir}\scripts\trackdog_pause_all\trackdog_pause_all.gml
+Converted description /// @description trackdog_pause_all()
+
+Converting GML script: ${project_dir}\scripts\trackdog_play_all\trackdog_play_all.gml
+Converted description /// @description trackdog_play_all()
+
+Converting GML script: ${project_dir}\scripts\trackdog_set_track_volume\trackdog_set_track_volume.gml
+Converted description /// @description trackdog_set_track_volume(sound_index, vol)/// @param sound_index
+/// @param  vol
+
+Converting GML script: ${project_dir}\scripts\trackdog_set_all_track_volume\trackdog_set_all_track_volume.gml
+Converted description /// @description trackdog_set_all_track_volume(vol)/// @param vol
+
+Converting GML script: ${project_dir}\scripts\trackdog_track_is_muted\trackdog_track_is_muted.gml
+Converted description /// @description trackdog_track_is_muted(SOUND_INDEX)/// @param SOUND_INDEX
+
+Converting GML script: ${project_dir}\scripts\trackdog_track_is_soloed\trackdog_track_is_soloed.gml
+Converted description /// @description trackdog_track_is_soloed(SOUND_INDEX)/// @param SOUND_INDEX
+
+Converting GML script: ${project_dir}\objects\TrackManager\Destroy_0.gml
+Converted description /// @description clean up
+
+Converting GML script: ${project_dir}\objects\TrackManager\Step_2.gml
+Converted description /// @description apply trackSetVol values
+
+Converting GML script: ${project_dir}\objects\TrackManager\Other_3.gml
+Converted description /// @description destroy event
+
+Converting GML script: ${project_dir}\objects\TrackManager\Draw_0.gml
+Converted description /// @description draw mixer
+
+Converting GML script: ${project_dir}\objects\Example_Level_1_Tracks\Alarm_0.gml
+Converted description /// @description randomly change mixing
+
+Converting GML script: ${project_dir}\objects\Example_Level_1_Tracks\Other_10.gml
+Converted description /// @description set up tracks
+
+Converting GML script: ${project_dir}\objects\Example_Level_1_Tracks\KeyPress_1.gml
+Converted description /// @description trigger alarm event
