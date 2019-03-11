@@ -1,5 +1,11 @@
 if (lit) {
 	scr_fadeToBlack(255);
+	
+	if (random(10) > 4) {
+		var smokeX = x + random_range(-13, 13);
+		var smokeY = obj_firelight.y + random_range(-5, 5);
+		instance_create_layer(smokeX, smokeY, "InstancesWaterReflect", obj_smoke);
+	}
 }
 else {
 	scr_fadeToBlack(0);
