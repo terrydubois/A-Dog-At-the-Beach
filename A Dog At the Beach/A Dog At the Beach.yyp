@@ -175,14 +175,6 @@
             }
         },
         {
-            "Key": "2984f94b-1dc7-41e9-ac50-c0213f34405c",
-            "Value": {
-                "id": "4d791f59-b370-4fe8-9c2d-a5877a7f25bb",
-                "resourcePath": "views\\2984f94b-1dc7-41e9-ac50-c0213f34405c.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "2c311bed-5cd5-4a33-806a-6a1dd90f5e01",
             "Value": {
                 "id": "987715bf-662e-4de6-893b-9b40a663467c",
@@ -284,6 +276,14 @@
                 "id": "e5ce1c82-cecd-4b53-8f64-6130bab9ede2",
                 "resourcePath": "views\\54a19c4d-5045-4134-878b-dcd8d2629391.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5994f5e6-0ae3-4c19-94b9-c07e6fa1ab9c",
+            "Value": {
+                "id": "56a6a70c-2518-43bb-94f4-4ac0737f2a15",
+                "resourcePath": "sprites\\spr_firepitLit\\spr_firepitLit.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -775,14 +775,6 @@
             }
         },
         {
-            "Key": "ef7dec31-5348-4f71-b0cd-076cb0b67ba2",
-            "Value": {
-                "id": "5d1e87df-141b-4be7-bfc5-ba27874b4bde",
-                "resourcePath": "views\\ef7dec31-5348-4f71-b0cd-076cb0b67ba2.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "f180afcd-cf06-42d3-921a-3916647bd73e",
             "Value": {
                 "id": "990a0145-5aec-42d7-b08a-43f06b1d5b71",
@@ -819,6 +811,14 @@
             "Value": {
                 "id": "5e2eb5d4-2a8c-4a46-8352-3d62c47e3372",
                 "resourcePath": "sprites\\spr_dogJump\\spr_dogJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f6323291-9fca-4b1e-9f34-62f87b7344d2",
+            "Value": {
+                "id": "8016135b-8302-4fd5-8591-0dd646aeec50",
+                "resourcePath": "sprites\\spr_firepit\\spr_firepit.yy",
                 "resourceType": "GMSprite"
             }
         },
