@@ -29,5 +29,6 @@ if (carried) {
 	if (!keyboard_check(vk_space)) {
 		obj_char.carrying = false;
 		carried = false;
+		obj_hud.interactDelay = 30;
 	}
 }

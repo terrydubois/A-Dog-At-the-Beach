@@ -82,6 +82,14 @@ else {
 }
 interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
 
+if (obj_hud.interactTextInst == self.id) {
+	if (endTextCycle || textCycleDelay > 1) {
+		obj_hud.interactTextInst = -1;
+	}
+}
+
+
+
 if (instance_exists(obj_dialogue)) {
 	canSpace = false;
 }

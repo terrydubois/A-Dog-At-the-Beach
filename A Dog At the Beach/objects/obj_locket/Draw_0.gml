@@ -18,7 +18,7 @@ if (distance_to_object(obj_char) < playerDigDist && !instance_exists(obj_title) 
 		yOffset = random_range(30, 34);
 	}
 	
-	if (dugUp && keyboard_check(vk_space) && !obj_char.carrying) {
+	if (dugUp && keyboard_check(vk_space) && !obj_char.carrying && obj_hud.interactTextInst == self.id) {
 		obj_char.carrying = true;
 		carried = true;
 	}

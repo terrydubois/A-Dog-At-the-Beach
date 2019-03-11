@@ -2,6 +2,13 @@ if (keyboard_check_pressed(vk_shift)) {
 	showDevVars = !showDevVars;
 }
 
+if (interactDelay > 0) {
+	interactDelay--;
+}
+else {
+	interactDelay = 0;
+}
+
 
 if (audio_system_is_available()) {
     if (audio_is_paused(global.soundWaves)) {

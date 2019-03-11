@@ -7,3 +7,5 @@ global.audioPlay[0] = -1;
 global.audioPlay[1] = -1;
 
 interactTextInst = -1;
+
+interactDelay = 0;

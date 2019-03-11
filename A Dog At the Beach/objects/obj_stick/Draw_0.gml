@@ -4,7 +4,7 @@ if (distance_to_object(obj_char) < 10 && !instance_exists(obj_title) && !instanc
 && obj_hud.interactTextInst == self.id) {
 	
 	
-	if (keyboard_check(vk_space) && !obj_char.carrying) {
+	if (keyboard_check(vk_space) && !obj_char.carrying && obj_hud.interactTextInst == self.id) {
 		obj_char.carrying = true;
 		carried = true;
 	}

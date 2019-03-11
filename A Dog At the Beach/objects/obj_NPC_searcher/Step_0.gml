@@ -15,8 +15,11 @@ if (state == stateInteracting) {
 	}
 }
 
+var textPlusYMax = 20;
+var textPlusYDiff = abs(interactTextPlusY - textPlusYMax);
+
 if (state == statePlayerNear) {
-	if (keyboard_check_released(vk_space) and canSpace) {
+	if (keyboard_check_released(vk_space) && canSpace && obj_hud.interactDelay < 1) {
 		state = stateInteracting;
 		if (!instance_exists(obj_dialogue) && !obj_char.carrying && !endTextCycle) {
 			var instDialogue = instance_create_layer(x, y, "InstancesDialogue", obj_dialogue);
@@ -48,7 +51,6 @@ if (state == statePlayerNear) {
 
 
 
-var textPlusYMax = 20;
 if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
 && (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id)) {
 	interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
@@ -61,6 +63,10 @@ else {
 	}
 }
 interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
+
+if (endTextCycle && obj_hud.interactTextInst == self.id) {
+	obj_hud.interactTextInst = -1;
+}
 
 
 
