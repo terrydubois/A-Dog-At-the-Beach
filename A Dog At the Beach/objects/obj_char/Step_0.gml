@@ -34,7 +34,7 @@ else {
 	hspeed = 0;
 }
 
-if(!keyboard_check(vk_left) && !keyboard_check(vk_right)) {
+if(!keyboard_check(vk_left) && !keyboard_check(vk_right) && !introWalk) {
 	hspeed = scr_approach(hspeed, 0, deAcc);
 	if (!keyboard_check(ord("Z"))) {
 		sprite_index = spr_dogIdol;
@@ -48,19 +48,22 @@ if (keyboard_check(ord("Z")) && !place_free(x, y + 1)
 	instance_create_layer(x + (facing * (sprite_width / 3)), y, "InstancesForeground", obj_sandParticle);
 }
 
-if (place_free(x, y + 1)) {
-	image_speed = 0;
-	sprite_index = spr_dogJump;
-	if (vspeed < 0) {
-		image_index = 0;
+if (!introWalk) {
+	if (place_free(x, y + 1)) {
+		image_speed = 0;
+		sprite_index = spr_dogJump;
+		if (vspeed < 0) {
+			image_index = 0;
+		}
+		else {
+			image_index = 1;
+		}
 	}
 	else {
-		image_index = 1;
+		image_speed = 1;
 	}
 }
-else {
-	image_speed = 1;
-}
+
 
 if (tailClockwise) {
 	tailRot++;
@@ -72,10 +75,15 @@ else {
 gravity = 0.5;
 gravity_direction = 270;
 
+if (instance_exists(obj_dialogue) && !place_free(x, y + 1) && !introWalk) {
+	sprite_index = spr_dogIdol;
+}
+
 if (introWalk) {
 	facing = -1;
-	sprite_index = spr_dogWalk;
 	hspeed = -4;
+	sprite_index = spr_dogWalk;
+	image_speed = 1;
 	var camPos = camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_camera[0]) / 2);
 	if (x <= camPos) {
 		hspeed = 0;
@@ -85,8 +93,6 @@ if (introWalk) {
 	}
 }
 
-if (instance_exists(obj_dialogue) && !place_free(x, y + 1)) {
-	sprite_index = spr_dogIdol;
-}
 
-//tailRot++;
+
+//tailRot++;';
