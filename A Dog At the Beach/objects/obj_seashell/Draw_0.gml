@@ -23,7 +23,8 @@ if (distance_to_object(obj_char) < playerDigDist) && !instance_exists(obj_title)
 		carried = true;
 	}
 	
-	if (dugUp && !obj_char.carrying && !carried && vspeed == 0) {
+	if (dugUp && !obj_char.carrying && !carried && vspeed == 0
+	 && obj_hud.interactTextInst == self.id) {
 		draw_set_font(fnt_main);
 		draw_set_color(c_white);
 		draw_text(x, y - sprite_get_height(sprite_index) - interactTextPlusY, "Hold SPACE");

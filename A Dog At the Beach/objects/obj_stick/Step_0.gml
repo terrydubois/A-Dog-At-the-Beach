@@ -4,14 +4,19 @@ gravity = 0.5;
 gravity_direction = 270;
 
 	
-	var textPlusYMax = 20;
-	if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)) {
-		interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
+var textPlusYMax = 20;
+if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
+&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id)) {
+	interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
+	obj_hud.interactTextInst = self.id;
+}
+else {
+	interactTextPlusY = 0;
+	if (obj_hud.interactTextInst == self.id) {
+		obj_hud.interactTextInst = -1;
 	}
-	else {
-		interactTextPlusY = 0;
-	}
-	interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
+}
+interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
 
 
 if (carried) {

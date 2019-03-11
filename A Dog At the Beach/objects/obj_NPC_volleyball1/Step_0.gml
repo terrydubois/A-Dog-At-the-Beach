@@ -59,6 +59,7 @@ else {
 	sprite_index = spr_dogWalk;
 }
 
+
 if (place_free(x, y + 1)) {
 	image_speed = 0;
 	sprite_index = spr_dogJump;

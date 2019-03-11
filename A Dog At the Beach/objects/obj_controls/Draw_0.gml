@@ -15,7 +15,7 @@ if (!instance_exists(obj_dialogue) && !instance_exists(obj_title)) {
 		controlsTextX = camera_get_view_x(view_camera[0]) + 20;
 		draw_set_halign(fa_left);
 		scr_drawTextShadow(controlsTextX, obj_sand.y + 20, "Space: interact");
-		scr_drawTextShadow(controlsTextX, obj_sand.y + 40, "W/S: fast-forward or rewind sun (dev control)");
+		scr_drawTextShadow(controlsTextX, obj_sand.y + 40, "Z: Dig");
 		scr_drawTextShadow(controlsTextX, obj_sand.y + 60, "CTRL: hide controls");
 	}
 	else {

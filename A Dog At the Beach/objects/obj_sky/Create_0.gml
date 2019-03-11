@@ -16,6 +16,6 @@ stars = false;
 
 alarm[1] = 1800;
 scr_spawnCloud(-sprite_get_width(spr_clouds));
-scr_spawnCloud(room_width / 2);
+scr_spawnCloud(room_width / 2 - 900);
 scr_spawnCloud(room_width * 0.75);
 //scr_spawnCloud(room_width - sprite_get_width(spr_clouds) * 3);

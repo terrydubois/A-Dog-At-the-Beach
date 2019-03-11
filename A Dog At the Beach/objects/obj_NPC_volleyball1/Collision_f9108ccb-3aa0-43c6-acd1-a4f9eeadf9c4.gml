@@ -1,3 +1,4 @@
+
 if (obj_NPC_volleyball2.state == obj_NPC_volleyball2.stateNormal
 || obj_NPC_volleyball2.state == obj_NPC_volleyball2.statePlayerNear) {
 	other.vspeed = -obj_char.jumpSpeed;
@@ -5,8 +6,14 @@ if (obj_NPC_volleyball2.state == obj_NPC_volleyball2.stateNormal
 }
 else if (obj_NPC_volleyball2.state == obj_NPC_volleyball2.stateWalkAway
 	&& obj_NPC_volleyball2.x >= obj_NPC_volleyball2.walkAwayXPos) {
-	other.vspeed = -obj_char.jumpSpeed;
+		
+	if (!pushBall) {
+		obj_ball.alarm[0] = 2;
+		pushBall = true;
+	}
+	other.vspeed = -8;
 	other.hspeed = 2;
 	
 	global.audioPlay[1] = 1;
+
 }

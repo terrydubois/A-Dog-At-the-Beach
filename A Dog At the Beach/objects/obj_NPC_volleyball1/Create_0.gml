@@ -1,1 +1,3 @@
 xOriginal = x;
+
+pushBall = false;

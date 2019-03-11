@@ -80,7 +80,6 @@ else {
 }
 
 
-
 var textPlusYMax = 20;
 if (state == statePlayerNear) {
 	interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;

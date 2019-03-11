@@ -1,13 +1,13 @@
 x = (room_width / 2) - (((room_width / 2) - camera_get_view_x(view_camera[0])) / 4);
 
-if (keyboard_check(ord("W")) and y > -sprite_height / 2) {
+if (keyboard_check(ord("W")) && y > -sprite_height / 2 && obj_hud.showDevVars) {
 	y -= 2;
 }
-if (keyboard_check(ord("S")) and y < obj_water.y + sprite_height) {
+if (keyboard_check(ord("S")) && y < obj_water.y + sprite_height && obj_hud.showDevVars) {
 	y += 2; 
 }
 
-if (keyboard_check_pressed(ord("Q"))) {
+if (keyboard_check_pressed(ord("Q")) && obj_hud.showDevVars) {
 	sunsetAuto = !sunsetAuto;
 }
 if (sunsetAuto && !instance_exists(obj_title)) {

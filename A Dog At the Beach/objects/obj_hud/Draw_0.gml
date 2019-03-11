@@ -16,6 +16,8 @@ if (showDevVars) {
 	draw_text(debugTextX, 160, "instance_number(obj_sandParticle) = " + string(instance_number(obj_sandParticle)));
 	draw_text(debugTextX, 180, "obj_char.x = " + string(obj_char.x));
 	draw_text(debugTextX, 200, "obj_char.carrying = " + string(obj_char.carrying));
+	draw_text(debugTextX, 220, "obj_hud.interactTextInst = " + string(interactTextInst));
+	draw_text(debugTextX, 240, "obj_ball.vspeed = " + string(obj_ball.vspeed));
 }
 else {
 	draw_text(debugTextX, 20, "press SHIFT for dev vars");
