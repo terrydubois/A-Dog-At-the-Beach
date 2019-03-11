@@ -31,6 +31,22 @@
     },
     "resources": [
         {
+            "Key": "00f41bce-39c4-437d-bb4c-4ea943b6cd51",
+            "Value": {
+                "id": "509848ca-0e26-4304-8789-c001b91e7245",
+                "resourcePath": "sprites\\sprite28\\sprite28.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0188cf1b-f9be-492a-a08b-33343b2cf39a",
+            "Value": {
+                "id": "58624c74-e676-4341-a4f3-46da1fce840b",
+                "resourcePath": "objects\\obj_stick\\obj_stick.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "069a0f69-308b-41c8-b73d-3ce52c514f42",
             "Value": {
                 "id": "41102503-4b4a-425d-ac1c-b5cb0f554b1e",
