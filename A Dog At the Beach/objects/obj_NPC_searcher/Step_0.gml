@@ -77,7 +77,7 @@ else {
 	hspeed = 0;
 }
 
-if (state == stateInteracting) {
+if (state == stateInteracting || instance_exists(obj_title)) {
 	hspeed = 0;
 }
 

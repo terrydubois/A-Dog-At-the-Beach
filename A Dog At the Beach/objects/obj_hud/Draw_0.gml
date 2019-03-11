@@ -14,6 +14,7 @@ if (showDevVars) {
 	draw_text(debugTextX, 120, "obj_sky.stars = " + string(obj_sky.stars));
 	draw_text(debugTextX, 140, "instance_number(obj_star) = " + string(instance_number(obj_star)));
 	draw_text(debugTextX, 160, "instance_number(obj_sandParticle) = " + string(instance_number(obj_sandParticle)));
+	draw_text(debugTextX, 180, "obj_char.x = " + string(obj_char.x));
 }
 else {
 	draw_text(debugTextX, 20, "press SHIFT for dev vars");

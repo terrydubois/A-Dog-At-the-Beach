@@ -10,7 +10,7 @@ if (keyboard_check(ord("S")) and y < obj_water.y + sprite_height) {
 if (keyboard_check_pressed(ord("Q"))) {
 	sunsetAuto = !sunsetAuto;
 }
-if (sunsetAuto) {
+if (sunsetAuto && !instance_exists(obj_title)) {
 	y += 0.02;
 }
 y = clamp(y, -(sprite_height / 2), (obj_water.y + sprite_height));

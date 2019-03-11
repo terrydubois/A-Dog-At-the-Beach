@@ -8,3 +8,5 @@ jumpSpeed = 8;
 
 alarm[0] = 30;
 tailClockwise = true;
+
+introWalk = false;
