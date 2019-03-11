@@ -3,6 +3,8 @@ scr_fadeToBlack(60);
 gravity = 0.5;
 gravity_direction = 270;
 
+var textPlusYMax = 20;
+
 if (dugUp) {
 	if (yOffset > 0) {
 		yOffset--;
@@ -11,7 +13,6 @@ if (dugUp) {
 		yOffset = 0;
 	}
 	
-	var textPlusYMax = 20;
 	if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
 	&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id)) {
 		interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
@@ -24,6 +25,8 @@ if (dugUp) {
 		}
 	}
 }
+
+interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
 
 if (!dugUp && dugUpAmount <= 0) {
 	vspeed = -10;

@@ -69,11 +69,16 @@ if (state == stateInteracting) {
 
 
 var textPlusYMax = 20;
-if (state == statePlayerNear) {
+if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
+&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id) && textCycleDelay < 1) {
 	interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
+	obj_hud.interactTextInst = self.id;
 }
 else {
 	interactTextPlusY = 0;
+	if (obj_hud.interactTextInst == self.id) {
+		obj_hud.interactTextInst = -1;
+	}
 }
 interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
 

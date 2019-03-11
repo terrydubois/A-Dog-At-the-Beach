@@ -1,6 +1,6 @@
 draw_sprite_ext(sprite_index, image_index, x + xOffset, y + yOffset, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
-if (distance_to_object(obj_char) < playerDigDist) && !instance_exists(obj_title) {
+if ((distance_to_object(obj_char) < playerDigDist) && !instance_exists(obj_title) && !instance_exists(obj_dialogue)) {
 	
 	if (obj_hud.showDevVars) {
 		draw_set_color(c_red);

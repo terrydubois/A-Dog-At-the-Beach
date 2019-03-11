@@ -1,6 +1,7 @@
 draw_sprite_ext(sprite_index, image_index, x , y , image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
-if (distance_to_object(obj_char) < 10 && !instance_exists(obj_title) && obj_hud.interactTextInst == self.id) {
+if (distance_to_object(obj_char) < 10 && !instance_exists(obj_title) && !instance_exists(obj_dialogue)
+&& obj_hud.interactTextInst == self.id) {
 	
 	
 	if (keyboard_check(vk_space) && !obj_char.carrying) {
