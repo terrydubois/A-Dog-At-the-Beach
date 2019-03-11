@@ -1,6 +1,6 @@
 draw_set_font(fnt_debug);
 draw_set_color(c_white);
-draw_set_alpha(1);
+draw_set_alpha(controlsAlpha);
 
 var controlsTextX = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) - 20;
 draw_set_font(fnt_main);

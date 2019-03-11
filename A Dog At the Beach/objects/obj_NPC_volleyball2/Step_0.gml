@@ -16,7 +16,7 @@ gravity_direction = 270;
 
 
 if (distance_to_object(obj_char) < 50) {
-	if (state == stateNormal) {
+	if (state == stateNormal && !obj_char.carrying) {
 		state = statePlayerNear;
 	}
 }
@@ -30,7 +30,7 @@ else {
 if (state == statePlayerNear) {
 	if (keyboard_check_released(vk_space) and canSpace) {
 		state = stateInteracting;
-		if (!instance_exists(obj_dialogue)) {
+		if (!instance_exists(obj_dialogue) && !obj_char.carrying) {
 			var instDialogue = instance_create_layer(x, y, "InstancesDialogue", obj_dialogue);
 			instDialogue.text[0] = "Hello!! I'm Astley. That's my friend Rick!";
 			instDialogue.text[1] = "Do you like volleyball? Here, swap in for me!";

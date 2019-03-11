@@ -10,3 +10,5 @@ alarm[0] = 30;
 tailClockwise = true;
 
 introWalk = false;
+
+carrying = false;
