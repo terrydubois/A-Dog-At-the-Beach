@@ -15,7 +15,6 @@ if (flying) {
 		//sprite_index = spr_gullIdle;
 		//camera_set_view_speed(view_camera[0], 500, 500);
 		flying = false;
-		kickable
 	}
 }
 
