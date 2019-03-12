@@ -4,6 +4,9 @@ var treeSize = ds_list_size(treeList)
 if (treeSize > 0) {
 	var treePos = ds_list_find_value(treeList, 0).x;
 }
+else { 
+	exit;	
+}
 
 if (flying) {
 	facing = -1;
@@ -18,6 +21,7 @@ if (flying) {
 	}
 }
 
-if(distToChar < 25 && keyboard_check_pressed("X") && !flying) {
+if(distToChar < 50 && keyboard_check_pressed(ord("X")) && !flying) {
 	flying = true
+	ds_list_delete(treeList, 0);
 }
