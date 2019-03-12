@@ -12,3 +12,6 @@ tailClockwise = true;
 introWalk = false;
 
 carrying = false;
+
+kickTime = 0;
+canKick = true;

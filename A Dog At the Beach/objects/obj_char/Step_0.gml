@@ -49,10 +49,17 @@ if (keyboard_check(ord("Z")) && !keyboard_check(ord("X")) && !place_free(x, y + 
 }
 
 if (keyboard_check(ord("X")) && !keyboard_check(ord("Z")) && !place_free(x, y + 1)
-&& !instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk) {
-	sprite_index = spr_dogKick;
-	hspeed = scr_approach(hspeed, 0, deAcc);
-	//instance_create_layer(x + (facing * (sprite_width / 3)), y, "InstancesForeground", obj_sandParticle);
+&& !instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk && canKick) {
+	if (kickTime < 1) {
+		canKick = false;
+		kickTime = 10;
+		hspeed = scr_approach(hspeed, 0, deAcc);
+		//instance_create_layer(x + (facing * (sprite_width / 3)), y, "InstancesForeground", obj_sandParticle);
+	}
+}
+
+if keyboard_check_released(ord("X")) {
+	canKick = true;
 }
 
 if (!introWalk) {
@@ -68,7 +75,21 @@ if (!introWalk) {
 	}
 	else {
 		image_speed = 1;
+		
+		if (kickTime > 0) {
+			sprite_index = spr_dogKick;
+		}
+		else {
+			sprite_index = spr_dogIdol;
+		}
 	}
+}
+
+if (kickTime > 0) {
+	kickTime--;
+}
+else {
+	kickTime = 0;
 }
 
 
