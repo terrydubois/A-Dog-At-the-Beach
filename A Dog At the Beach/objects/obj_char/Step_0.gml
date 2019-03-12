@@ -50,7 +50,7 @@ if (keyboard_check(ord("Z")) && !keyboard_check(ord("X")) && !place_free(x, y + 
 
 if (keyboard_check(ord("X")) && !keyboard_check(ord("Z")) && !place_free(x, y + 1)
 && !instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk) {
-	//sprite_index = spr_dogDig;
+	sprite_index = spr_dogKick;
 	hspeed = scr_approach(hspeed, 0, deAcc);
 	//instance_create_layer(x + (facing * (sprite_width / 3)), y, "InstancesForeground", obj_sandParticle);
 }

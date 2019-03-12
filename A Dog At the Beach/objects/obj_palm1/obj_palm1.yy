@@ -4,20 +4,11 @@
     "mvc": "1.0",
     "name": "obj_palm1",
     "eventList": [
-        {
-            "id": "f2b42a21-bdde-48d3-b463-9d84028178d2",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "1bf7b11d-f673-4bb6-b942-d4eda5bba93c"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "5b2ca78b-bfe5-4c42-8145-6054e085d83e",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
