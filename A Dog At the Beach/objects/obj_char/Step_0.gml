@@ -80,7 +80,9 @@ if (!introWalk) {
 			sprite_index = spr_dogKick;
 		}
 		else {
-			sprite_index = spr_dogIdol;
+			if (sprite_index == spr_dogKick) {
+				sprite_index = spr_dogIdol;
+			}
 		}
 	}
 }
@@ -119,6 +121,10 @@ if (introWalk) {
 		camera_set_view_speed(view_camera[0], 500, 500);
 		introWalk = false;
 	}
+}
+
+if (sprite_index == spr_dogKick) {
+	hspeed = scr_approach(hspeed, 0, deAcc);
 }
 
 

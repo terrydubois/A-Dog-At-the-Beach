@@ -15,7 +15,7 @@ if (time > 60) {
 	time = 0;
 }
 
-if (distance_to_object(obj_char) < 32) {
+if (point_distance(x, obj_char.y, obj_char.x, obj_char.y) < 64) {
 	if (obj_char.sprite_index = spr_dogKick && shake == 0) {
 		shake = 10;
 	}
