@@ -11,3 +11,5 @@ canSpace = true;
 walkAwayXPos = x + 200;
 
 state = stateNormal;
+
+endTextCycle = false;

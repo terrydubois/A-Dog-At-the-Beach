@@ -4,8 +4,8 @@ draw_set_color(c_white);
 draw_set_alpha(1);
 draw_set_halign(fa_center);
 
-if (state == statePlayerNear && obj_hud.interactTextInst == self.id) {
-	draw_set_font(fnt_main);
+if (state == statePlayerNear && obj_hud.interactTextInst == self.id && !endTextCycle) {
+	draw_set_font(fnt_interact);
 	draw_text(x, y - sprite_get_height(sprite_index) - interactTextPlusY, "Press SPACE");
 }
 

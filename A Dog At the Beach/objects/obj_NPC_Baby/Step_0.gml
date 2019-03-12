@@ -21,7 +21,7 @@ else {
 
 
 if (state == statePlayerNear) {
-	if (keyboard_check_released(vk_space) and canSpace) {
+	if (keyboard_check_released(vk_space) && canSpace && obj_hud.interactDelay < 1) {
 		state = stateInteracting;
 		if (!instance_exists(obj_dialogue) && !obj_char.carrying && !endTextCycle) {
 			var instDialogue = instance_create_layer(x, y, "InstancesDialogue", obj_dialogue);

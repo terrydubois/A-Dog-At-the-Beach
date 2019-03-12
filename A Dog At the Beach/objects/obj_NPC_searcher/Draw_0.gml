@@ -6,7 +6,7 @@ draw_set_halign(fa_center);
 
 if (state == statePlayerNear && instance_number(obj_dialogue) < 1 && !endTextCycle
 && obj_hud.interactTextInst == self.id && obj_hud.interactDelay < 1) {
-	draw_set_font(fnt_main);
+	draw_set_font(fnt_interact);
 	draw_text(x, y - sprite_get_height(sprite_index) - interactTextPlusY, "Press SPACE");
 }
 
