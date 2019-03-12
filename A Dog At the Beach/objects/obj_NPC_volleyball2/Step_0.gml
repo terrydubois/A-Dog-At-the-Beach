@@ -27,13 +27,14 @@ else {
 }
 
 
-if (state == statePlayerNear) {
+if (state == statePlayerNear && !endTextCycle) {
 	if (keyboard_check_released(vk_space) and canSpace) {
 		state = stateInteracting;
 		if (!instance_exists(obj_dialogue) && !obj_char.carrying) {
 			var instDialogue = instance_create_layer(x, y, "InstancesDialogue", obj_dialogue);
 			instDialogue.text[0] = "Hello!! I'm Astley. That's my friend Rick!";
 			instDialogue.text[1] = "Do you like volleyball? Here, swap in for me!";
+			endTextCycle = true;
 		}
 	}
 }
@@ -82,7 +83,7 @@ else {
 
 var textPlusYMax = 20;
 if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
-&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id)) {
+&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id) && !endTextCycle) {
 	interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
 	obj_hud.interactTextInst = self.id;
 }
@@ -95,6 +96,9 @@ else {
 interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
 
 
+if (endTextCycle && obj_hud.interactTextInst == self.id) {
+	obj_hud.interactTextInst = -1;
+}
 
 
 if (instance_exists(obj_dialogue)) {

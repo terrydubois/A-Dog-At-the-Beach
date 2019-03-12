@@ -9,14 +9,14 @@ if (!instance_exists(obj_dialogue) && !instance_exists(obj_title)) {
 
 	if (showControls) {
 		draw_set_halign(fa_right);
-		scr_drawTextShadow(controlsTextX, obj_sand.y + 20, "Left/Right Arrow Keys: move");
+		scr_drawTextShadow(controlsTextX, obj_sand.y + 10, "Left/Right Arrow Keys: move");
 		scr_drawTextShadow(controlsTextX, obj_sand.y + 40, "Up Arrow Key: jump");
 	
 		controlsTextX = camera_get_view_x(view_camera[0]) + 20;
 		draw_set_halign(fa_left);
-		scr_drawTextShadow(controlsTextX, obj_sand.y + 20, "Space: interact");
+		scr_drawTextShadow(controlsTextX, obj_sand.y + 10, "Space: interact");
 		scr_drawTextShadow(controlsTextX, obj_sand.y + 40, "Z: Dig");
-		scr_drawTextShadow(controlsTextX, obj_sand.y + 60, "CTRL: hide controls");
+		scr_drawTextShadow(controlsTextX, obj_sand.y + 70, "CTRL: hide controls");
 	}
 	else {
 		draw_set_halign(fa_right);
