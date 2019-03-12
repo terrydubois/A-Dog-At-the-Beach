@@ -19,6 +19,7 @@ for (var i = 0; i < instance_number(obj_seashell); i++) {
 
 if (allShellsFound) {
 	textCycleDelay = 0;
+	obj_musicControl.trackVolumeDest[3] = 1;
 }
 
 
@@ -48,7 +49,6 @@ if (state == statePlayerNear) {
 						break;
 					case 2:
 						instDialogue.text[0] = "I'm still looking those seashells kid... Bring 'em over to me if you can. And don't forget you can dig by holding Z!";
-						break;
 						break;
 					default:
 						break;

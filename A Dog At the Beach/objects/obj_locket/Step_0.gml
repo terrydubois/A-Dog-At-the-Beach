@@ -12,11 +12,16 @@ if (dugUp) {
 	}
 	
 	var textPlusYMax = 20;
-	if (distance_to_object(obj_char) < playerDigDist && !place_free(x, y + 1)) {
+	if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
+	&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id)) {
 		interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
+		obj_hud.interactTextInst = self.id;
 	}
 	else {
 		interactTextPlusY = 0;
+		if (obj_hud.interactTextInst == self.id) {
+			obj_hud.interactTextInst = -1;
+		}
 	}
 	interactTextPlusY = clamp(interactTextPlusY, 0, textPlusYMax);
 }
@@ -33,6 +38,8 @@ if (carried || carriedSara) {
 	var yDest;
 	
 	if (carriedSara) {
+		obj_musicControl.trackVolumeDest[1] = 1;
+		
 		var facing = 1;
 		if (obj_NPC_searcher.image_xscale < 0) {
 			facing = -1;
@@ -50,7 +57,7 @@ if (carried || carriedSara) {
 	
 	image_angle = 0;
 	
-	if (!keyboard_check(vk_space)) {
+	if (!keyboard_check(vk_space) && !carriedSara) {
 		obj_char.carrying = false;
 		carried = false;
 		obj_hud.interactDelay = 30;

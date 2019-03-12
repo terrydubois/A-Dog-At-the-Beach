@@ -14,6 +14,5 @@ else if (obj_NPC_volleyball2.state == obj_NPC_volleyball2.stateWalkAway
 	other.vspeed = -8;
 	other.hspeed = 2;
 	
-	global.audioPlay[1] = 1;
-
+	obj_musicControl.trackVolumeDest[0] = 1;
 }

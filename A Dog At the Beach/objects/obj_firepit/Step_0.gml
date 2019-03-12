@@ -15,6 +15,10 @@ if (!instance_exists(obj_stick) && !lit && global.sunset <= 0.27) {
 	lit = true;
 }
 
+if (!instance_exists(obj_stick)) {
+	obj_musicControl.trackVolumeDest[2] = 1;
+}
+
 if (lit) {
 	sprite_index = spr_firepitLit;
 	image_speed = 0.75;

@@ -19,22 +19,6 @@ if (audio_system_is_available()) {
 			global.soundWaves = audio_play_sound(snd_waves, 0, true);
 		}
 	}
-	
-	if (global.audioPlay[1] > 0) {
-		if (audio_is_paused(global.soundMusic)) {
-			audio_resume_sound(global.soundMusic)
-		}
-	    else {
-	        if (!audio_is_playing(global.soundMusic)) {
-				global.soundMusic = audio_play_sound(snd_waves, 0, true);
-			}
-		}
-	}
-	else {
-		audio_pause_sound(global.soundMusic);
-	}
-	
-	
 }
 else {
 	if (audio_is_playing(global.soundWaves)) {

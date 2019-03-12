@@ -90,7 +90,6 @@ if (keyboard_check_released(vk_space) and !instance_exists(obj_dialogue) and !ca
 
 
 
-
 if (walking) {
 	hspeed = image_xscale * 2;
 }

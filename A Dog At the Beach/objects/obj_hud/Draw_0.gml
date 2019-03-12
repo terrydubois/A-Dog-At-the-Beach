@@ -18,6 +18,7 @@ if (showDevVars) {
 	draw_text(debugTextX, 200, "obj_char.carrying = " + string(obj_char.carrying));
 	draw_text(debugTextX, 220, "obj_hud.interactTextInst = " + string(interactTextInst));
 	draw_text(debugTextX, 240, "obj_ball.vspeed = " + string(obj_ball.vspeed));
+	draw_text(debugTextX, 260, "obj_hud.interactDelay = " + string(interactDelay));
 }
 else {
 	draw_text(debugTextX, 20, "press SHIFT for dev vars");
