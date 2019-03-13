@@ -13,6 +13,9 @@ else {
 
 if(distance_to_object(Obj_NPC_Mama) < 50) {
 	mamaNear = true;
+	if (obj_musicControl.trackVolumeDest[4] < 1) {
+		obj_musicControl.trackVolumeDest[4] = 1;
+	}
 	//start musical track
 }
 else {

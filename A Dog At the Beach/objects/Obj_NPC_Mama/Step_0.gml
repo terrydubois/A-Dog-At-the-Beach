@@ -21,7 +21,10 @@ if (flying) {
 	}
 }
 
-if(distToChar < 50 && keyboard_check_pressed(ord("X")) && !flying) {
+var nearestTree = instance_nearest(x, y, obj_treeParent);
+
+//if(distToChar < 50 && keyboard_check_pressed(ord("X")) && !flying) {
+if (nearestTree.shake > 0 && !flying && obj_NPC_Baby.textCycle > 0) {
 	flying = true
 	ds_list_delete(treeList, 0);
 }
