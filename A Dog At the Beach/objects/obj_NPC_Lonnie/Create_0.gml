@@ -9,6 +9,5 @@ canSpace = true;
 
 textCycle = 0;
 textCycleDelay = 0;
-mamaNear = false;
 
 endTextCycle = false;

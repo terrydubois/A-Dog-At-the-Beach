@@ -1,3 +1,6 @@
+scr_fadeToBlack(0);
+
+
 var distToChar = point_distance(obj_char.x, obj_char.y, x, obj_sand.y);
 var treeSize = ds_list_size(treeList)
 

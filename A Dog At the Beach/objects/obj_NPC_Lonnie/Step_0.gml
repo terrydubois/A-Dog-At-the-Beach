@@ -1,9 +1,14 @@
-scr_fadeToBlack(0);
+if (obj_firepit.lit) {
+	scr_fadeToBlack(50);
+}
+else {
+	scr_fadeToBlack(0);
+}
 
-var distToChar = point_distance(obj_char.x, obj_char.y, x, obj_sand.y);
 
-if (distToChar < 50) {
-	if (state == stateNormal && !obj_char.carrying && textCycleDelay < 1) {
+
+if (distance_to_object(obj_char) < 50) {
+	if (state == stateNormal && textCycleDelay < 1 && !obj_char.carrying) {
 		state = statePlayerNear;
 	}
 }
@@ -11,41 +16,40 @@ else {
 	state = stateNormal;
 }
 
-if(distance_to_object(Obj_NPC_Mama) < 50) {
-	mamaNear = true;
-	if (obj_musicControl.trackVolumeDest[4] < 1) {
-		obj_musicControl.trackVolumeDest[4] = 1;
-	}
+if (!instance_exists(obj_stick)) {
 	textCycleDelay = 0;
-	//start musical track
 }
-else {
-	mamaNear = false;	
-}
+
 
 
 if (state == statePlayerNear) {
-	if (keyboard_check_released(vk_space) && canSpace && obj_hud.interactDelay < 1) {
+	if (keyboard_check_released(vk_space) and canSpace) {
 		state = stateInteracting;
 		if (!instance_exists(obj_dialogue) && !obj_char.carrying && !endTextCycle) {
 			var instDialogue = instance_create_layer(x, y, "InstancesDialogue", obj_dialogue);
 			
-			if (mamaNear) {
-				if (!endTextCycle) {
-					instDialogue.text[0] = "Thank you so much my fluffy friend! Now I can enjoy the sunset with my mama.";
-					endTextCycle = true;
+			if (!instance_exists(obj_stick)) {
+				if (!obj_firepit.lit) {
+					if (!endTextCycle) {
+						instDialogue.text[0] = "Thanks for gathering all of that wood for us! We're gonna start the fire at sunset.";
+						endTextCycle = true;
+					}
+				}
+				else {
+					if (!endTextCycle) {
+						instDialogue.text[0] = "Thanks for gathering all of that wood for us! What a beautiful night for a bonfire, right?";
+						endTextCycle = true;
+					}
 				}
 			}
 			else {
 				switch (textCycle) {
 					case 0:
-						instDialogue.text[0] = "Umm excuse me.., yeah up here. Could you help me?";
-						instDialogue.text[1] = "I got stuck here trying to fly by myself, and lost sight of my mom. If you see her, could you lead her this way? ";
+						instDialogue.text[0] = "Hello! Me and Grant over there are trying to get a bonfire going. If you see any wood, would you mind bringing it to our firepit?";
 						textCycle++;
 						break;
 					case 1:
-						instDialogue.text[0] = "My mom told me to be careful, but I got my terrible listening from her, haha. ";
-						instDialogue.text[1] = "Sometimes I have to shake the tree to get her attention, which is tough for a little birdie like me!";
+						instDialogue.text[0] = "There's gotta be some wood on the beach. If you bring it to our firepit here, we can enjoy a little beach bonfire!";
 						break;
 					default:
 						break;
@@ -53,6 +57,7 @@ if (state == statePlayerNear) {
 			}
 			
 			textCycleDelay = room_speed * 5;
+		
 		}
 	}
 }
@@ -63,11 +68,9 @@ if (state == stateInteracting) {
 	}
 }
 
-
-
 var textPlusYMax = 20;
-if (distToChar < 30  && textCycleDelay < 1
-&& ((obj_hud.interactTextInst < 0 ) || obj_hud.interactTextInst == self.id)) {
+if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
+&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id) && textCycleDelay < 1) {
 	interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
 	obj_hud.interactTextInst = self.id;
 }
@@ -84,7 +87,6 @@ if (obj_hud.interactTextInst == self.id) {
 		obj_hud.interactTextInst = -1;
 	}
 }
-
 
 
 if (instance_exists(obj_dialogue)) {

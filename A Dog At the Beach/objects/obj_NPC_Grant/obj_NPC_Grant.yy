@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_NPC_Grant",
     "eventList": [
-        
+        {
+            "id": "7d0cc800-85e0-4517-ade9-9ab933d66d66",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "6289eace-3f54-4631-9a5a-9fce92fff4b9"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -12,7 +12,7 @@ if (dugUp) {
 	}
 	
 	var textPlusYMax = 20;
-	if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1)
+	if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1) && !instance_exists(obj_dialogue)
 	&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id)) {
 		interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
 		obj_hud.interactTextInst = self.id;
