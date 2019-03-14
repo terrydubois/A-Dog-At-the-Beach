@@ -11,7 +11,7 @@ if (keyboard_check_pressed(ord("Q")) && obj_hud.showDevVars) {
 	sunsetAuto = !sunsetAuto;
 }
 if (sunsetAuto && !instance_exists(obj_title)) {
-	y += 0.015;
+	y += sunSpeed;
 }
 y = clamp(y, -(sprite_height / 2), (obj_water.y + sprite_height));
 
