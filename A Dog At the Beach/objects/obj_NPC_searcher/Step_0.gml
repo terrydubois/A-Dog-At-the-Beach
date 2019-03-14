@@ -115,8 +115,8 @@ else if (x < - (sprite_width / 2)) {
 }
 
 if (hspeed == 0) {
-	sprite_index = spr_dogIdol;
+	sprite_index = spr_saraIdol;
 }
 else {
-	sprite_index = spr_dogWalk;
+	sprite_index = spr_saraWalk;
 }

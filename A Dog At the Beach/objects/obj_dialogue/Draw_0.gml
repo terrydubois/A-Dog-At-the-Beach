@@ -18,7 +18,6 @@ draw_set_font(fnt_main);
 var testChar = "A";
 typeLineMaxLength = (X2 - X1) / string_width(testChar);
 
-
 draw_set_halign(fa_left);
 draw_set_color(c_black);
 draw_set_alpha(1);
@@ -26,3 +25,8 @@ draw_text(X1 + 100, Y1 + 20, strHashed);
 
 draw_set_halign(fa_right);
 draw_text(X2 - 32, Y2 - 32, pressSpaceText);
+
+if (obj_hud.showDevVars) {
+	draw_set_halign(fa_left);
+	draw_text(X1 + 32, Y2 - 32, "canSpace: " + string(canSpace));
+}

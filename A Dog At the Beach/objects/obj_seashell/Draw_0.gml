@@ -27,6 +27,7 @@ if ((distance_to_object(obj_char) < playerDigDist) && !instance_exists(obj_title
 	 && obj_hud.interactTextInst == self.id) {
 		draw_set_font(fnt_interact);
 		draw_set_color(c_white);
-		draw_text(x, y - sprite_get_height(sprite_index) - interactTextPlusY, "Hold SPACE");
+		var interactText = string_hash_to_newline("Seashell#Hold SPACE");
+		draw_text(x, y - sprite_get_height(sprite_index) - interactTextPlusY, interactText);
 	}
 }

@@ -3,7 +3,7 @@ scr_fadeToBlack(60);
 gravity = 0.5;
 gravity_direction = 270;
 
-var textPlusYMax = 20;
+var textPlusYMax = 40;
 
 if (dugUp) {
 	if (yOffset > 0) {

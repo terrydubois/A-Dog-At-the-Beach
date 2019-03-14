@@ -42,7 +42,7 @@
             "Key": "00f41bce-39c4-437d-bb4c-4ea943b6cd51",
             "Value": {
                 "id": "509848ca-0e26-4304-8789-c001b91e7245",
-                "resourcePath": "sprites\\sprite28\\sprite28.yy",
+                "resourcePath": "sprites\\spr_stick\\spr_stick.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "682f1fd4-28de-4c81-9668-a2016872dea2",
+            "Value": {
+                "id": "0244ac96-8b21-44b1-ac10-24c4670d0a91",
+                "resourcePath": "sprites\\spr_progressCircle\\spr_progressCircle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6a055913-4bf6-4570-9286-977145cf4033",
             "Value": {
                 "id": "545dbbe4-b6d5-4a06-ba1d-66b8f9a2504e",
@@ -492,6 +500,14 @@
                 "id": "9c4971d0-2975-4c2d-81d0-bdf83e411248",
                 "resourcePath": "fonts\\fnt_debug\\fnt_debug.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "6d8aff38-fcf2-4f6d-bfe1-ff58ad6ea131",
+            "Value": {
+                "id": "47ee8e26-d734-4a6d-afbb-81a9d3e2482e",
+                "resourcePath": "sprites\\spr_sandCastle\\spr_sandCastle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -887,6 +903,14 @@
             }
         },
         {
+            "Key": "c363f6ef-4ab0-49aa-ba34-4060757c3311",
+            "Value": {
+                "id": "eb72c5c4-f2e0-4baa-bad8-73220b0f4bde",
+                "resourcePath": "objects\\obj_castle\\obj_castle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c3bd4e91-a7fa-418c-8ff7-caf138c0d11d",
             "Value": {
                 "id": "4b471dee-5b93-4565-a973-fc07f5d81c13",
@@ -999,6 +1023,14 @@
             }
         },
         {
+            "Key": "dd50302e-e6bc-4fc5-a0cc-fbfdb4fa08f4",
+            "Value": {
+                "id": "42c6950e-a6ad-4a3f-a0ee-f36992aa9074",
+                "resourcePath": "sprites\\spr_saraIdol\\spr_saraIdol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e16785fc-720a-4306-9c6c-f627ea965466",
             "Value": {
                 "id": "e30f0b95-17e7-4c83-b694-2be613df92e5",
@@ -1076,6 +1108,14 @@
                 "id": "65872789-24be-450a-aac3-f377e221f2fc",
                 "resourcePath": "views\\eef7a98b-f0af-4323-83b5-b7489575f1ac.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f10edd70-8e44-446c-b4c5-5cc42cc0226c",
+            "Value": {
+                "id": "510d28dd-b799-4a3c-a3ad-7593eb4f7a32",
+                "resourcePath": "sprites\\spr_saraWalk\\spr_saraWalk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

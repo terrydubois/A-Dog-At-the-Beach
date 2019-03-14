@@ -10,16 +10,31 @@ else {
 }
 
 var allShellsFound = true;
-for (var i = 0; i < instance_number(obj_seashell); i++) {
-	var currentShell = instance_find(obj_seashell, i);
-	if (distance_to_object(currentShell) > 50 || obj_char.carrying) {
-		allShellsFound = false;
+if (instance_exists(obj_seashell)) {
+	for (var i = 0; i < instance_number(obj_seashell); i++) {
+		var currentShell = instance_find(obj_seashell, i);
+		if (distance_to_object(currentShell) > 50 || obj_char.carrying) {
+			allShellsFound = false;
+		}
 	}
 }
 
 if (allShellsFound) {
+	with (obj_seashell) {
+		instance_destroy();
+	}
+	
 	textCycleDelay = 0;
 	obj_musicControl.trackVolumeDest[3] = 1;
+	
+	if (obj_castle.y > obj_sand.y + 5) {
+		obj_castle.y -= random_range(0.5, 2);
+		obj_castle.x = obj_castle.xstart + random_range(-2, 2);
+	}
+	else {
+		obj_castle.x = obj_castle.xstart;
+		obj_castle.y = obj_sand.y + 5;
+	}
 }
 
 
@@ -31,7 +46,7 @@ if (state == statePlayerNear) {
 			
 			if (allShellsFound) {
 				if (!endTextCycle) {
-					instDialogue.text[0] = "Ahhh can you believe it? My art piece is complete! Thank you for your help... not bad for a tourist!";
+					instDialogue.text[0] = "Ahhh can you believe it? My artwork is complete! Thank you for your help... not bad for a tourist!";
 					endTextCycle = true;
 				}
 			}

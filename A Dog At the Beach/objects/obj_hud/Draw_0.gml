@@ -23,3 +23,17 @@ if (showDevVars) {
 else {
 	draw_text(debugTextX, 20, "press SHIFT for dev vars");
 }
+
+// draw progress circles
+var camWidth = camera_get_view_width(view_camera[0]);
+var camX = camera_get_view_x(view_camera[0]);
+for (var i = 0; i < 5; i++) {
+	var circleX = camX + ((camWidth / 12) * 4) + ((camWidth / 12) * i);
+	var circleY = obj_sand.y + 80;
+	var imageIndex = 0;
+	
+	if (gameProgress > i) {
+		imageIndex = 1;
+	}
+	draw_sprite_ext(spr_progressCircle, imageIndex, circleX, circleY, 1, 1, 0, c_white, obj_controls.controlsAlpha);
+}

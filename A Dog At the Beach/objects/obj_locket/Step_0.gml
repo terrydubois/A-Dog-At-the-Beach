@@ -11,7 +11,7 @@ if (dugUp) {
 		yOffset = 0;
 	}
 	
-	var textPlusYMax = 20;
+	var textPlusYMax = 75;
 	if (distance_to_object(obj_char) < 10 && !place_free(x, y + 1) && !instance_exists(obj_dialogue)
 	&& (obj_hud.interactTextInst < 0 || obj_hud.interactTextInst == self.id)) {
 		interactTextPlusY += abs(textPlusYMax - interactTextPlusY) / 6;
@@ -65,8 +65,11 @@ if (carried || carriedSara) {
 }
 else {
 	image_angle = 90;
-	
-	if (dugUp && distance_to_object(obj_NPC_searcher) < 16) {
-		carriedSara = true;
+}
+
+if (dugUp && distance_to_object(obj_NPC_searcher) < 16) {
+	carriedSara = true;
+	if (obj_char.carrying && carried) {
+		obj_char.carrying = false;
 	}
 }

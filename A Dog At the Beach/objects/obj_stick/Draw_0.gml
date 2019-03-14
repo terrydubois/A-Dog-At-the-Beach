@@ -12,6 +12,7 @@ if (distance_to_object(obj_char) < 10 && !instance_exists(obj_title) && !instanc
 	if (!obj_char.carrying && !carried && vspeed == 0) {
 		draw_set_font(fnt_interact);
 		draw_set_color(c_white);
-		draw_text(x, y - sprite_get_height(sprite_index) - interactTextPlusY, "Hold SPACE");
+		var interactText = string_hash_to_newline("Stick#Hold SPACE");
+		draw_text(x, y - sprite_get_height(sprite_index) - interactTextPlusY, interactText);
 	}
 }

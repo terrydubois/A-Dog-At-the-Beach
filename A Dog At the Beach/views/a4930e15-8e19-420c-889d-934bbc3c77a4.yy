@@ -14,7 +14,9 @@
         "127b5688-42df-408c-92ed-6dea1f35817e",
         "0bc8d8b9-4664-4ac4-982d-ec12af21fffd",
         "eeeadd77-bc9b-40b0-8fa1-2c7ccd18f0bb",
-        "4159b982-05ad-4623-9a6e-5bd0f932166a"
+        "4159b982-05ad-4623-9a6e-5bd0f932166a",
+        "dd50302e-e6bc-4fc5-a0cc-fbfdb4fa08f4",
+        "f10edd70-8e44-446c-b4c5-5cc42cc0226c"
     ],
     "filterType": "GMSprite",
     "folderName": "Dogs",
