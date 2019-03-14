@@ -53,16 +53,16 @@ if (x < xOriginal - 100) {
 }
 
 if (abs(hspeed) < 0.1) {
-	sprite_index = spr_dogIdol;
+	sprite_index = spr_dogIdol2;
 }
 else {
-	sprite_index = spr_dogWalk;
+	sprite_index = spr_dogIdol2;
 }
 
 
 if (place_free(x, y + 1)) {
 	image_speed = 0;
-	sprite_index = spr_dogJump;
+	sprite_index = spr_dogJump2;
 	if (vspeed < 0) {
 		image_index = 0;
 	}

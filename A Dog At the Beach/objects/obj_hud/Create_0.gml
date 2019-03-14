@@ -7,3 +7,15 @@ interactTextInst = -1;
 interactDelay = 0;
 
 gameProgress = 0;
+
+endDialogue = false;
+
+endFadeout = false;
+endFadeoutAlpha = 0;
+
+endFadeoutFull = false;
+
+
+
+introFadeinAlpha = 1;
+outroFadeoutFinal = false;

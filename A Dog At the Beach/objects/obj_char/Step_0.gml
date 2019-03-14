@@ -1,6 +1,6 @@
 scr_fadeToBlack(0);
 
-if (!instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk) {
+if (!instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk && !obj_hud.endDialogue) {
 	if (keyboard_check(vk_left) && !keyboard_check(ord("Z")) && !keyboard_check(ord("X"))) {
 		if (x > sprite_width / 2) {
 			hspeed = -4;
@@ -34,7 +34,7 @@ else {
 	hspeed = 0;
 }
 
-if(!keyboard_check(vk_left) && !keyboard_check(vk_right) && !introWalk) {
+if(!keyboard_check(vk_left) && !keyboard_check(vk_right) && !introWalk && !obj_hud.endDialogue) {
 	hspeed = scr_approach(hspeed, 0, deAcc);
 	if (!keyboard_check(ord("Z")) && !keyboard_check(ord("X"))) {
 		sprite_index = spr_dogIdol;
@@ -42,14 +42,14 @@ if(!keyboard_check(vk_left) && !keyboard_check(vk_right) && !introWalk) {
 }
 
 if (keyboard_check(ord("Z")) && !keyboard_check(ord("X")) && !place_free(x, y + 1)
-&& !instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk) {
+&& !instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk && !obj_hud.endDialogue) {
 	sprite_index = spr_dogDig;
 	hspeed = scr_approach(hspeed, 0, deAcc);
 	instance_create_layer(x + (facing * (sprite_width / 3)), y, "InstancesForeground", obj_sandParticle);
 }
 
 if (keyboard_check(ord("X")) && !keyboard_check(ord("Z")) && !place_free(x, y + 1)
-&& !instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk && canKick) {
+&& !instance_exists(obj_dialogue) && !instance_exists(obj_title) && !introWalk && canKick && !obj_hud.endDialogue) {
 	if (kickTime < 1) {
 		canKick = false;
 		kickTime = 10;
@@ -120,6 +120,9 @@ if (introWalk) {
 		sprite_index = spr_dogIdol;
 		camera_set_view_speed(view_camera[0], 500, 500);
 		introWalk = false;
+		
+		var instDialogue = instance_create_layer(x, y, "InstancesDialogue", obj_dialogue);
+		instDialogue.text[0] = "Alright Sunny, we finally made it! Why don't you go and play with the other dogs?";
 	}
 }
 

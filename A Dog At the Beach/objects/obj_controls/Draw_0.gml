@@ -5,7 +5,7 @@ draw_set_alpha(controlsAlpha);
 var controlsTextX = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) - 20;
 draw_set_font(fnt_main);
 
-if (!instance_exists(obj_dialogue) && !instance_exists(obj_title)) {
+if (!instance_exists(obj_dialogue) && !instance_exists(obj_title) && !obj_hud.endDialogue) {
 
 	if (showControls) {
 		draw_set_halign(fa_right);

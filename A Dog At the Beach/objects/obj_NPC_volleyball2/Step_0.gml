@@ -39,6 +39,12 @@ if (state == statePlayerNear && !endTextCycle) {
 	}
 }
 
+if (instance_exists(obj_ball)) {
+	if (obj_ball.interactable) {
+		endTextCycle = true;
+	}
+}
+
 if (state == stateInteracting) {
 	if (!instance_exists(obj_dialogue)) {
 		state = stateWalkAway;
@@ -47,13 +53,16 @@ if (state == stateInteracting) {
 
 if (state == stateWalkAway) {
 	if (x < walkAwayXPos) {
+		if (!place_free(x, y + 1)) {
+			vspeed = -obj_char.jumpSpeed;
+		}
 		hspeed = 3;
-		sprite_index = spr_dogWalk;
+		sprite_index = spr_dogIdol3;
 		image_xscale = 1;
 	}
 	else {
 		x = walkAwayXPos;
-		sprite_index = spr_dogIdol;
+		sprite_index = spr_dogIdol3;
 		image_xscale = -1;
 		hspeed = 0;
 		instVolleyballBall.interactable = true;
@@ -62,7 +71,7 @@ if (state == stateWalkAway) {
 
 if (place_free(x, y + 1)) {
 	image_speed = 0;
-	sprite_index = spr_dogJump;
+	sprite_index = spr_dogJump3;
 	if (vspeed < 0) {
 		image_index = 0;
 	}
@@ -72,10 +81,10 @@ if (place_free(x, y + 1)) {
 }
 else {
 	if (abs(hspeed) < 1) {
-		sprite_index = spr_dogIdol;
+		sprite_index = spr_dogIdol3;
 	}
 	else {
-		sprite_index = spr_dogWalk;
+		sprite_index = spr_dogIdol3;
 	}
 	image_speed = 1;
 }

@@ -21,7 +21,7 @@ if (showDevVars) {
 	draw_text(debugTextX, 260, "obj_hud.interactDelay = " + string(interactDelay));
 }
 else {
-	draw_text(debugTextX, 20, "press SHIFT for dev vars");
+	//draw_text(debugTextX, 20, "press SHIFT for dev vars");
 }
 
 // draw progress circles
@@ -36,4 +36,73 @@ for (var i = 0; i < 5; i++) {
 		imageIndex = 1;
 	}
 	draw_sprite_ext(spr_progressCircle, imageIndex, circleX, circleY, 1, 1, 0, c_white, obj_controls.controlsAlpha);
+}
+
+// fadeout
+if (endFadeout) {
+
+	if (endFadeoutFull) {
+		endFadeoutAlpha -= 0.01;
+		
+		camera_set_view_pos(view_camera[0], 1300, 0);
+		
+		draw_sprite(spr_title, 0, 2175, 182);
+		
+		draw_set_font(fnt_main);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_middle);
+		draw_set_alpha(1);
+		var creditsHashed = string_hash_to_newline("A game by Terry DuBois,#Georgio Klironomos,#and Milo Lynch##Press SPACE to play again");
+		draw_text(2175, 430, creditsHashed);
+		
+		if (endFadeoutAlpha < 0.1 && keyboard_check_released(vk_space)) {
+			outroFadeoutFinal = true;
+		}
+	}
+	else {
+		endFadeoutAlpha += 0.01;
+		if (endFadeoutAlpha >= 1) {
+			endFadeoutAlpha = 1;
+			endFadeoutFull = true;
+			
+			scr_killInstances();
+		}
+	}
+	
+	draw_set_alpha(endFadeoutAlpha);
+	draw_set_color(c_black);
+	
+	var rectX1 = -10; //camera_get_view_x(view_camera[0]) - 10;
+	var rectY1 = -10;
+	var rectX2 = room_width + 10;//camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 10;
+	var rectY2 = room_height + 10;
+	draw_rectangle(rectX1, rectY1, rectX2, rectY2, false);
+}
+
+
+// intro fadein
+if (introFadeinAlpha > 0 || outroFadeoutFinal) {
+	
+	draw_set_alpha(introFadeinAlpha);
+	draw_set_color(c_white);
+	
+	var rectX1 = -10;
+	var rectY1 = -10;
+	var rectX2 = room_width + 10;
+	var rectY2 = room_height + 10;
+	draw_rectangle(rectX1, rectY1, rectX2, rectY2, false);
+	
+	if (endDialogue) {
+		introFadeinAlpha += 0.03;
+		
+		if (introFadeinAlpha >= 1) {
+			introFadeinAlpha = 1;
+			game_restart();
+		}
+	}
+	else {
+		introFadeinAlpha -= 0.03;
+	}
+	
+	introFadeinAlpha = clamp(introFadeinAlpha, 0, 1);
 }
