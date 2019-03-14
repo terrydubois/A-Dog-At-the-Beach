@@ -1,3 +1,9 @@
+if(gameProgress >= 5 && instance_exists(obj_sun)) {
+	with(obj_sun) {
+		sunSpeed = 0.020;
+	}
+}
+
 
 if (keyboard_check_pressed(vk_shift)) {
 	showDevVars = !showDevVars;

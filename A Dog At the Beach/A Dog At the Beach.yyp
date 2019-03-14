@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "263f2a64-95f5-40c4-a021-8b58db508602",
+            "Value": {
+                "id": "75b92828-ecf0-41a2-a7fe-2c37266f8455",
+                "resourcePath": "sounds\\snd_walking_on_sand\\snd_walking_on_sand.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "26bc5528-5669-4bbb-8371-1b01bb9bda51",
             "Value": {
                 "id": "ff1bc4ea-9f57-4ec6-a31c-0bc01615637d",
@@ -372,6 +380,14 @@
                 "id": "d854c838-a1f8-4484-bc2e-543cd6ff4881",
                 "resourcePath": "scripts\\refl_add_object\\refl_add_object.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4d574db3-58bb-4354-bc47-c0f90ec7e0da",
+            "Value": {
+                "id": "dd3fbc44-2e45-4e90-b407-d4e0d494965f",
+                "resourcePath": "sounds\\snd_seagull_short\\snd_seagull_short.yy",
+                "resourceType": "GMSound"
             }
         },
         {
