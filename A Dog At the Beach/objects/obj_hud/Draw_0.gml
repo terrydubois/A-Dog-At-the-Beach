@@ -5,7 +5,7 @@ draw_set_alpha(1);
 draw_set_halign(fa_left);
 var debugTextX = camera_get_view_x(view_camera[0]) + 20;
 
-if (showDevVars) {
+if (showDevVars && instance_exists(obj_char)) {
 	draw_text(debugTextX, 20, "global.sunset = " + string(global.sunset));
 	draw_text(debugTextX, 40, "obj_sun.sunsetAuto = " + string(obj_sun.sunsetAuto));
 	draw_text(debugTextX, 60, "audio_system_is_available() = " + string(audio_system_is_available()));
